@@ -8,18 +8,26 @@ type ProductCardCompactProps = {
   product: LocalizedProduct;
   locale: Locale;
   discountLabel?: string;
+  variant?: "carousel" | "grid";
 };
 
 export function ProductCardCompact({
   product,
   locale,
   discountLabel,
+  variant = "carousel",
 }: ProductCardCompactProps) {
   const href = getProductPath(locale, product);
   const discount = getDiscountPercent(product);
 
   return (
-    <article className="group w-[9.5rem] shrink-0 snap-start sm:w-[10.5rem]">
+    <article
+      className={
+        variant === "carousel"
+          ? "group w-[9.5rem] shrink-0 snap-start sm:w-[10.5rem]"
+          : "group w-full"
+      }
+    >
       <Link
         href={href}
         className="flex h-full flex-col overflow-hidden rounded-xl bg-card shadow-sm transition-shadow hover:shadow-md"

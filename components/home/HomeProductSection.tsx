@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { ProductCard } from "@/components/product/ProductCard";
+import { ProductCardCompact } from "@/components/product/ProductCardCompact";
+import { ProductCarousel } from "@/components/shop/ProductCarousel";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { getDiscountPercent } from "@/lib/data/products";
 import type { LocalizedProduct } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -12,10 +14,13 @@ type HomeProductSectionProps = {
   viewAllLabel: string;
   viewAllHref: string;
   products: LocalizedProduct[];
-  labels: {
-    inStock: string;
-    outOfStock: string;
+  layout?: "grid" | "carousel";
+  discountLabel?: string;
+  scrollLabels?: {
+    prev: string;
+    next: string;
   };
+  className?: string;
 };
 
 export function HomeProductSection({
@@ -25,10 +30,32 @@ export function HomeProductSection({
   viewAllLabel,
   viewAllHref,
   products,
-  labels,
+  layout = "grid",
+  discountLabel,
+  scrollLabels,
+  className = "",
 }: HomeProductSectionProps) {
+  if (products.length === 0) return null;
+
+  const renderProduct = (product: LocalizedProduct) => {
+    const discount = getDiscountPercent(product);
+    return (
+      <ProductCardCompact
+        key={product.id}
+        product={product}
+        locale={locale}
+        variant={layout === "carousel" ? "carousel" : "grid"}
+        discountLabel={
+          discount !== null && discountLabel
+            ? discountLabel.replace("{percent}", String(discount))
+            : undefined
+        }
+      />
+    );
+  };
+
   return (
-    <section className="py-14">
+    <section className={`py-6 sm:py-8 ${className}`}>
       <Container>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader title={title} subtitle={subtitle} />
@@ -39,16 +66,21 @@ export function HomeProductSection({
             {viewAllLabel} →
           </Link>
         </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              locale={locale}
-              labels={labels}
-            />
-          ))}
-        </div>
+
+        {layout === "carousel" ? (
+          <div className="mt-6">
+            <ProductCarousel
+              scrollPrevLabel={scrollLabels?.prev ?? "Previous"}
+              scrollNextLabel={scrollLabels?.next ?? "Next"}
+            >
+              {products.map((product) => renderProduct(product))}
+            </ProductCarousel>
+          </div>
+        ) : (
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            {products.map((product) => renderProduct(product))}
+          </div>
+        )}
       </Container>
     </section>
   );
