@@ -164,5 +164,24 @@ export type Dictionary = {
   common: {
     products: string;
     viewAll: string;
+    search: string;
+    searchPlaceholder: string;
+    searchNoResults: string;
+    searchProducts: string;
+    searchPosts: string;
+    close: string;
+    skipToContent: string;
+  };
+  errors: {
+    title: string;
+    body: string;
+    retry: string;
+    goHome: string;
+  };
+  notFoundPage: {
+    title: string;
+    body: string;
+    goHome: string;
+    browseShop: string;
   };
 };

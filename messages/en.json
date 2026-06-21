@@ -163,6 +163,25 @@
   },
   "common": {
     "products": "products",
-    "viewAll": "View all"
+    "viewAll": "View all",
+    "search": "Search",
+    "searchPlaceholder": "Search products or articles...",
+    "searchNoResults": "No results found",
+    "searchProducts": "Products",
+    "searchPosts": "Articles",
+    "close": "Close",
+    "skipToContent": "Skip to main content"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "body": "Sorry, something went wrong. Please try again.",
+    "retry": "Try again",
+    "goHome": "Go home"
+  },
+  "notFoundPage": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Go home",
+    "browseShop": "Browse shop"
   }
 }
