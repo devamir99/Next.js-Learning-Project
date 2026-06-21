@@ -52,6 +52,12 @@ export async function generateMetadata({
       template: `%s | ${dictionary.meta.title}`,
     },
     description: dictionary.meta.description,
+    openGraph: {
+      title: dictionary.meta.title,
+      description: dictionary.meta.description,
+      type: "website",
+      locale: localeParam === "fa" ? "fa_IR" : "en_US",
+    },
   };
 }
 

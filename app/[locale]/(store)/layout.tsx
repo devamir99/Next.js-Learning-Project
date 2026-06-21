@@ -1,4 +1,5 @@
 import { CartProvider } from "@/components/cart/CartProvider";
+import { SkipToContent } from "@/components/layout/SkipToContent";
 import { PromoBar } from "@/components/layout/PromoBar";
 import { StoreFooter } from "@/components/layout/StoreFooter";
 import { StoreNav } from "@/components/layout/StoreNav";
@@ -27,9 +28,12 @@ export default async function StoreLayout({
   return (
     <CartProvider locale={locale}>
       <div className="flex min-h-screen flex-col">
+        <SkipToContent label={dictionary.common.skipToContent} />
         <PromoBar message={dictionary.promo.message} />
         <StoreNav locale={locale} dictionary={dictionary} />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
         <StoreFooter locale={locale} dictionary={dictionary} />
       </div>
     </CartProvider>
