@@ -11,6 +11,7 @@ type ButtonProps = {
   href?: string;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
+  onClick?: () => void;
 };
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -37,6 +38,7 @@ export function Button({
   href,
   type = "button",
   disabled = false,
+  onClick,
 }: ButtonProps) {
   const classes = `inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
 
@@ -49,7 +51,7 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes} disabled={disabled}>
+    <button type={type} className={classes} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );
