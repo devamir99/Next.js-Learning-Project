@@ -1,0 +1,12 @@
+[
+  { "id": "apple", "name": { "fa": "Apple", "en": "Apple" }, "slug": "apple" },
+  { "id": "samsung", "name": { "fa": "Samsung", "en": "Samsung" }, "slug": "samsung" },
+  { "id": "sony", "name": { "fa": "Sony", "en": "Sony" }, "slug": "sony" },
+  { "id": "nike", "name": { "fa": "Nike", "en": "Nike" }, "slug": "nike" },
+  { "id": "adidas", "name": { "fa": "Adidas", "en": "Adidas" }, "slug": "adidas" },
+  { "id": "dyson", "name": { "fa": "Dyson", "en": "Dyson" }, "slug": "dyson" },
+  { "id": "xiaomi", "name": { "fa": "Xiaomi", "en": "Xiaomi" }, "slug": "xiaomi" },
+  { "id": "lg", "name": { "fa": "LG", "en": "LG" }, "slug": "lg" },
+  { "id": "bosch", "name": { "fa": "Bosch", "en": "Bosch" }, "slug": "bosch" },
+  { "id": "philips", "name": { "fa": "Philips", "en": "Philips" }, "slug": "philips" }
+]

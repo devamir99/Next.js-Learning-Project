@@ -1,0 +1,81 @@
+{
+  "sections": [
+    {
+      "id": "promo-grid-4",
+      "layout": "grid-4",
+      "items": [
+        {
+          "id": "gaming",
+          "title": { "fa": "گیمینگ", "en": "Gaming" },
+          "subtitle": { "fa": "کنسول و لوازم", "en": "Consoles & gear" },
+          "href": "/shop/products/electronics",
+          "image": "https://picsum.photos/seed/banner-gaming/600/400",
+          "accentColor": "#6366f1"
+        },
+        {
+          "id": "beauty-promo",
+          "title": { "fa": "زیبایی", "en": "Beauty" },
+          "subtitle": { "fa": "مراقبت پوست", "en": "Skincare picks" },
+          "href": "/shop/products/beauty",
+          "image": "https://picsum.photos/seed/banner-beauty/600/400",
+          "accentColor": "#ec4899"
+        },
+        {
+          "id": "fashion-promo",
+          "title": { "fa": "مد زنانه", "en": "Women's fashion" },
+          "subtitle": { "fa": "استایل بهاره", "en": "Spring style" },
+          "href": "/shop/products/fashion",
+          "image": "https://picsum.photos/seed/banner-fashion/600/400",
+          "accentColor": "#8b5cf6"
+        },
+        {
+          "id": "home-promo",
+          "title": { "fa": "خانه", "en": "Home" },
+          "subtitle": { "fa": "دکور مدرن", "en": "Modern decor" },
+          "href": "/shop/products/home",
+          "image": "https://picsum.photos/seed/banner-home/600/400",
+          "accentColor": "#0ea5e9"
+        }
+      ]
+    },
+    {
+      "id": "promo-wide",
+      "layout": "wide",
+      "items": [
+        {
+          "id": "fresh-delivery",
+          "title": { "fa": "سوپرمارکت نوا — تحویل سریع", "en": "Nova Fresh — Fast delivery" },
+          "subtitle": {
+            "fa": "مواد غذایی و خواربار mock با ارسال رایگان بالای ۵۰ دلار",
+            "en": "Mock groceries and essentials with free shipping over $50"
+          },
+          "href": "/shop/products/home",
+          "image": "https://picsum.photos/seed/banner-fresh/1400/400",
+          "accentColor": "#16a34a"
+        }
+      ]
+    },
+    {
+      "id": "promo-grid-2",
+      "layout": "grid-2",
+      "items": [
+        {
+          "id": "sports-promo",
+          "title": { "fa": "ورزش و سفر", "en": "Sports & travel" },
+          "subtitle": { "fa": "تا ۲۵٪ تخفیف", "en": "Up to 25% off" },
+          "href": "/shop/products/sports",
+          "image": "https://picsum.photos/seed/banner-sports/800/400",
+          "accentColor": "#22c55e"
+        },
+        {
+          "id": "books-promo",
+          "title": { "fa": "کتاب و لوازم‌التحریر", "en": "Books & stationery" },
+          "subtitle": { "fa": "پیشنهاد هفته", "en": "Weekly picks" },
+          "href": "/shop/products/books",
+          "image": "https://picsum.photos/seed/banner-books/800/400",
+          "accentColor": "#f59e0b"
+        }
+      ]
+    }
+  ]
+}
