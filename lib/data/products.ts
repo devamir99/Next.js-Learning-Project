@@ -92,7 +92,7 @@ export function getFeaturedProducts(locale: Locale): LocalizedProduct[] {
 
 export function getBestSellerProducts(
   locale: Locale,
-  limit = 4
+  limit = 6
 ): LocalizedProduct[] {
   const bestsellers = getProducts(locale, { badge: "bestseller" });
 
@@ -109,7 +109,7 @@ export function getBestSellerProducts(
 
 export function getNewArrivalProducts(
   locale: Locale,
-  limit = 4
+  limit = 8
 ): LocalizedProduct[] {
   const newProducts = getProducts(locale, { badge: "new" });
 
@@ -151,6 +151,26 @@ export function getDealProducts(
   );
 
   return [...saleProducts, ...withDiscount].slice(0, limit);
+}
+
+export function getPickedForYouProducts(
+  locale: Locale,
+  limit = 6
+): LocalizedProduct[] {
+  const featured = getFeaturedProducts(locale);
+  const rated = getProducts(locale)
+    .filter((product) => product.inStock)
+    .sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
+
+  const picked: LocalizedProduct[] = [];
+
+  for (const product of [...featured, ...rated]) {
+    if (picked.some((item) => item.id === product.id)) continue;
+    picked.push(product);
+    if (picked.length >= limit) break;
+  }
+
+  return picked;
 }
 
 export function getProductPath(
