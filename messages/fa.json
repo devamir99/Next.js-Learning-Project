@@ -43,10 +43,22 @@
     "tagline": "ماکت فروشگاه آنلاین — نمونه کار فرانت‌اند با Next.js",
     "quickLinks": "دسترسی سریع",
     "contactTitle": "تماس با ما",
-    "email": "devamir99@gmail.com",
-    "phone": "+98 912 000 0000",
-    "address": "تهران، ایران",
+    "connectTitle": "شبکه‌های اجتماعی",
+    "builtBy": "ساخته‌شده توسط",
     "rights": "تمامی حقوق محفوظ است."
+  },
+  "portfolio": {
+    "badge": "نمونه کار Portfolio",
+    "title": "طراحی و توسعه توسط DevAmir",
+    "subtitle": "نوا مارکت یک mockup فروشگاه دو زبانه است که برای نمایش مهارت‌های فرانت‌اند، i18n و UX مدرن e-commerce ساخته شده. برای پروژه‌های واقعی یا همکاری، از طریق سایت من در تماس باشید.",
+    "visitPortfolio": "مشاهده devamir.com",
+    "contactMe": "تماس با من",
+    "website": "devamir.com",
+    "email": "devamir99@gmail.com",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "telegram": "Telegram",
+    "phone": "0920 500 7494"
   },
   "shop": {
     "subtitle": "مرور کامل دسته‌بندی‌ها و محصولات فروشگاه",
@@ -91,7 +103,7 @@
   "about": {
     "subtitle": "داستان و ارزش‌های پشت mockup فروشگاه نوا مارکت",
     "storyTitle": "داستان ما",
-    "storyBody": "نوا مارکت یک mockup فروشگاه آنلاین است که برای نمایش معماری App Router، i18n دو زبانه و UI مدرن e-commerce ساخته شده. تمرکز ما روی تجربه خرید تمیز، سریع و قابل ارائه در portfolio است.",
+    "storyBody": "نوا مارکت یک mockup فروشگاه آنلاین است که توسط DevAmir برای نمایش معماری App Router، i18n دو زبانه و UI مدرن e-commerce ساخته شده. تمرکز روی تجربه خرید تمیز، سریع و قابل ارائه در portfolio است — بدون backend، فقط فرانت‌اند production-ready.",
     "valuesTitle": "ارزش‌های ما",
     "value1Title": "طراحی کاربرمحور",
     "value1Body": "چیدمان واضح، مسیر خرید ساده و UI responsive در اولویت.",
@@ -119,6 +131,7 @@
     "successTitle": "پیام ثبت شد!",
     "successBody": "این یک mockup است — پیام واقعاً ارسال نشد.",
     "infoTitle": "اطلاعات تماس",
+    "socialTitle": "شبکه‌های اجتماعی",
     "hoursTitle": "ساعات پاسخ‌گویی",
     "hoursBody": "شنبه تا پنج‌شنبه، ۹ صبح تا ۶ عصر"
   },

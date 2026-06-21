@@ -43,10 +43,22 @@
     "tagline": "E-commerce frontend mockup — portfolio project built with Next.js",
     "quickLinks": "Quick Links",
     "contactTitle": "Contact",
-    "email": "devamir99@gmail.com",
-    "phone": "+1 (555) 012-3456",
-    "address": "Tehran, Iran",
+    "connectTitle": "Connect",
+    "builtBy": "Built by",
     "rights": "All rights reserved."
+  },
+  "portfolio": {
+    "badge": "Portfolio Project",
+    "title": "Designed & Built by DevAmir",
+    "subtitle": "Nova Mart is a bilingual e-commerce mockup showcasing modern frontend architecture, i18n, and shopping UX. For real projects or collaboration, reach out through my personal site.",
+    "visitPortfolio": "Visit devamir.com",
+    "contactMe": "Contact me",
+    "website": "devamir.com",
+    "email": "devamir99@gmail.com",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "telegram": "Telegram",
+    "phone": "0920 500 7494"
   },
   "shop": {
     "subtitle": "Browse the full store catalog and categories",
@@ -91,7 +103,7 @@
   "about": {
     "subtitle": "The story and values behind the Nova Mart store mockup",
     "storyTitle": "Our Story",
-    "storyBody": "Nova Mart is an online store mockup built to showcase App Router architecture, bilingual i18n, and modern e-commerce UI. The focus is a clean, fast shopping experience that works as a portfolio piece.",
+    "storyBody": "Nova Mart is an online store mockup built by DevAmir to showcase App Router architecture, bilingual i18n, and modern e-commerce UI. The focus is a clean, fast shopping experience — frontend only, no backend, production-ready patterns.",
     "valuesTitle": "Our Values",
     "value1Title": "User-first Design",
     "value1Body": "Clear layout, simple shopping paths, and responsive UI come first.",
@@ -119,6 +131,7 @@
     "successTitle": "Message received!",
     "successBody": "This is a mockup — no message was actually sent.",
     "infoTitle": "Contact Info",
+    "socialTitle": "Social links",
     "hoursTitle": "Support Hours",
     "hoursBody": "Saturday to Thursday, 9 AM – 6 PM"
   },

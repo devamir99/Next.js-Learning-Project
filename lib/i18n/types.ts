@@ -43,10 +43,22 @@ export type Dictionary = {
     tagline: string;
     quickLinks: string;
     contactTitle: string;
-    email: string;
-    phone: string;
-    address: string;
+    connectTitle: string;
+    builtBy: string;
     rights: string;
+  };
+  portfolio: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    visitPortfolio: string;
+    contactMe: string;
+    website: string;
+    email: string;
+    linkedin: string;
+    github: string;
+    telegram: string;
+    phone: string;
   };
   shop: {
     subtitle: string;
@@ -103,6 +115,7 @@ export type Dictionary = {
     successTitle: string;
     successBody: string;
     infoTitle: string;
+    socialTitle: string;
     hoursTitle: string;
     hoursBody: string;
   };
