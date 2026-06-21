@@ -35,7 +35,16 @@
     "fromTheBlogSubtitle": "Guides, reviews, and store news",
     "carouselPrev": "Previous slide",
     "carouselNext": "Next slide",
-    "carouselSlide": "Slide"
+    "carouselSlide": "Slide",
+    "amazingDealsTitle": "Special Offers",
+    "amazingDealsEndsIn": "Ends in",
+    "amazingDealsViewAll": "View all",
+    "amazingDealsDiscount": "{percent}% off",
+    "productScrollPrev": "Previous products",
+    "productScrollNext": "Next products",
+    "countdownHours": "Hours",
+    "countdownMinutes": "Min",
+    "countdownSeconds": "Sec"
   },
   "theme": {
     "light": "Light mode",

@@ -36,6 +36,15 @@ export type Dictionary = {
     carouselPrev: string;
     carouselNext: string;
     carouselSlide: string;
+    amazingDealsTitle: string;
+    amazingDealsEndsIn: string;
+    amazingDealsViewAll: string;
+    amazingDealsDiscount: string;
+    productScrollPrev: string;
+    productScrollNext: string;
+    countdownHours: string;
+    countdownMinutes: string;
+    countdownSeconds: string;
   };
   theme: {
     light: string;

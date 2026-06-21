@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCard } from "@/components/category/CategoryCard";
+import { AmazingDealsSection, getDealDeadline } from "@/components/home/AmazingDealsSection";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { HomeProductSection } from "@/components/home/HomeProductSection";
 import { QuickAccessGrid } from "@/components/home/QuickAccessGrid";
@@ -12,6 +13,7 @@ import {
   getBestSellerProducts,
   getBlogPosts,
   getCategories,
+  getDealProducts,
   getFeaturedBlogPosts,
   getHomeSlides,
   getHomeStories,
@@ -41,6 +43,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const stories = getHomeStories(locale);
   const slides = getHomeSlides(locale);
   const quickAccess = getQuickAccessItems(locale);
+  const dealProducts = getDealProducts(locale);
   const bestSellers = getBestSellerProducts(locale);
   const newArrivals = getNewArrivalProducts(locale);
   const blogPosts = getFeaturedBlogPosts(locale).slice(0, 3);
@@ -62,6 +65,24 @@ export default async function HomePage({ params }: HomePageProps) {
         }}
       />
       <QuickAccessGrid items={quickAccess} />
+
+      <AmazingDealsSection
+        locale={locale}
+        products={dealProducts}
+        endsAt={getDealDeadline()}
+        viewAllHref={`/${locale}/shop/products`}
+        labels={{
+          title: home.amazingDealsTitle,
+          endsIn: home.amazingDealsEndsIn,
+          viewAll: home.amazingDealsViewAll,
+          discount: home.amazingDealsDiscount,
+          scrollPrev: home.productScrollPrev,
+          scrollNext: home.productScrollNext,
+          countdownHours: home.countdownHours,
+          countdownMinutes: home.countdownMinutes,
+          countdownSeconds: home.countdownSeconds,
+        }}
+      />
 
       <section className="py-14">
         <Container>

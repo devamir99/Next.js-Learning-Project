@@ -35,7 +35,16 @@
     "fromTheBlogSubtitle": "راهنما، بررسی و اخبار فروشگاه",
     "carouselPrev": "اسلاید قبلی",
     "carouselNext": "اسلاید بعدی",
-    "carouselSlide": "اسلاید"
+    "carouselSlide": "اسلاید",
+    "amazingDealsTitle": "حراج ویژه",
+    "amazingDealsEndsIn": "زمان باقی‌مانده",
+    "amazingDealsViewAll": "مشاهده همه",
+    "amazingDealsDiscount": "{percent}٪",
+    "productScrollPrev": "محصولات قبلی",
+    "productScrollNext": "محصولات بعدی",
+    "countdownHours": "ساعت",
+    "countdownMinutes": "دقیقه",
+    "countdownSeconds": "ثانیه"
   },
   "theme": {
     "light": "حالت روشن",
