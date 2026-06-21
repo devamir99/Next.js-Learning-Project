@@ -46,7 +46,11 @@
     "countdownMinutes": "دقیقه",
     "countdownSeconds": "ثانیه",
     "brandsTitle": "برندهای محبوب",
-    "brandsSubtitle": "خرید بر اساس برندهای معتبر"
+    "brandsSubtitle": "خرید بر اساس برندهای معتبر",
+    "pickedForYou": "منتخب برای شما",
+    "pickedForYouSubtitle": "پیشنهادهای شخصی‌سازی‌شده mock بر اساس محبوبیت",
+    "blogScrollPrev": "مقالات قبلی",
+    "blogScrollNext": "مقالات بعدی"
   },
   "theme": {
     "light": "حالت روشن",

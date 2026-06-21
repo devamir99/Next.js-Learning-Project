@@ -47,6 +47,10 @@ export type Dictionary = {
     countdownSeconds: string;
     brandsTitle: string;
     brandsSubtitle: string;
+    pickedForYou: string;
+    pickedForYouSubtitle: string;
+    blogScrollPrev: string;
+    blogScrollNext: string;
   };
   theme: {
     light: string;

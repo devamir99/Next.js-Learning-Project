@@ -1,16 +1,13 @@
-import Link from "next/link";
-import { BlogCard } from "@/components/blog/BlogCard";
 import { AmazingDealsSection, getDealDeadline } from "@/components/home/AmazingDealsSection";
 import { BrandStrip } from "@/components/home/BrandStrip";
 import { CategoryIconGrid } from "@/components/home/CategoryIconGrid";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
+import { HomeBlogSection } from "@/components/home/HomeBlogSection";
 import { HomeProductSection } from "@/components/home/HomeProductSection";
 import { PromoBannerSection } from "@/components/home/PromoBannerSection";
 import { QuickAccessGrid } from "@/components/home/QuickAccessGrid";
 import { StoryRail } from "@/components/home/StoryRail";
 import { PortfolioCta } from "@/components/portfolio/PortfolioCta";
-import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   getBestSellerProducts,
   getBlogPosts,
@@ -22,6 +19,7 @@ import {
   getHomeSlides,
   getHomeStories,
   getNewArrivalProducts,
+  getPickedForYouProducts,
   getQuickAccessItems,
 } from "@/lib/data";
 import { isLocale, type Locale } from "@/lib/i18n/config";
@@ -41,7 +39,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const locale = localeParam as Locale;
   const dictionary = await getDictionary(locale);
-  const { home, shop, blog, common, portfolio } = dictionary;
+  const { home, blog, common, portfolio } = dictionary;
 
   const categories = getCategories(locale);
   const stories = getHomeStories(locale);
@@ -54,11 +52,16 @@ export default async function HomePage({ params }: HomePageProps) {
   const brands = getBrands(locale);
   const bestSellers = getBestSellerProducts(locale);
   const newArrivals = getNewArrivalProducts(locale);
-  const blogPosts = getFeaturedBlogPosts(locale).slice(0, 3);
+  const pickedForYou = getPickedForYouProducts(locale);
+  const blogPosts = (
+    getFeaturedBlogPosts(locale).length > 0
+      ? getFeaturedBlogPosts(locale)
+      : getBlogPosts(locale)
+  ).slice(0, 6);
 
-  const productLabels = {
-    inStock: shop.inStock,
-    outOfStock: shop.outOfStock,
+  const scrollLabels = {
+    prev: home.productScrollPrev,
+    next: home.productScrollNext,
   };
 
   return (
@@ -108,9 +111,11 @@ export default async function HomePage({ params }: HomePageProps) {
         title={home.bestSellers}
         subtitle={home.bestSellersSubtitle}
         viewAllLabel={common.viewAll}
-        viewAllHref={`/${locale}/shop`}
+        viewAllHref={`/${locale}/shop/products`}
         products={bestSellers}
-        labels={productLabels}
+        layout="grid"
+        discountLabel={home.amazingDealsDiscount}
+        scrollLabels={scrollLabels}
       />
 
       {promoWide ? (
@@ -123,11 +128,25 @@ export default async function HomePage({ params }: HomePageProps) {
           title={home.newArrivals}
           subtitle={home.newArrivalsSubtitle}
           viewAllLabel={common.viewAll}
-          viewAllHref={`/${locale}/shop`}
+          viewAllHref={`/${locale}/shop/products`}
           products={newArrivals}
-          labels={productLabels}
+          layout="carousel"
+          discountLabel={home.amazingDealsDiscount}
+          scrollLabels={scrollLabels}
         />
       </div>
+
+      <HomeProductSection
+        locale={locale}
+        title={home.pickedForYou}
+        subtitle={home.pickedForYouSubtitle}
+        viewAllLabel={common.viewAll}
+        viewAllHref={`/${locale}/shop/products`}
+        products={pickedForYou}
+        layout="grid"
+        discountLabel={home.amazingDealsDiscount}
+        scrollLabels={scrollLabels}
+      />
 
       {promoGrid2 ? (
         <PromoBannerSection layout={promoGrid2.layout} items={promoGrid2.items} />
@@ -140,34 +159,19 @@ export default async function HomePage({ params }: HomePageProps) {
         subtitle={home.brandsSubtitle}
       />
 
-      <section className="py-14">
-        <Container>
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <SectionHeader
-              title={home.fromTheBlog}
-              subtitle={home.fromTheBlogSubtitle}
-            />
-            <Link
-              href={`/${locale}/blog`}
-              className="text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
-            >
-              {common.viewAll} →
-            </Link>
-          </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {(blogPosts.length > 0 ? blogPosts : getBlogPosts(locale).slice(0, 3)).map(
-              (post) => (
-                <BlogCard
-                  key={`${post.categorySlug}-${post.slug}`}
-                  post={post}
-                  locale={locale}
-                  minReadLabel={blog.minRead}
-                />
-              )
-            )}
-          </div>
-        </Container>
-      </section>
+      <HomeBlogSection
+        locale={locale}
+        posts={blogPosts}
+        title={home.fromTheBlog}
+        subtitle={home.fromTheBlogSubtitle}
+        viewAllLabel={common.viewAll}
+        viewAllHref={`/${locale}/blog`}
+        minReadLabel={blog.minRead}
+        scrollLabels={{
+          prev: home.blogScrollPrev,
+          next: home.blogScrollNext,
+        }}
+      />
 
       <PortfolioCta labels={portfolio} />
     </>

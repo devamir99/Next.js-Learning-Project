@@ -46,7 +46,11 @@
     "countdownMinutes": "Min",
     "countdownSeconds": "Sec",
     "brandsTitle": "Popular brands",
-    "brandsSubtitle": "Shop trusted brand names"
+    "brandsSubtitle": "Shop trusted brand names",
+    "pickedForYou": "Picked for you",
+    "pickedForYouSubtitle": "Mock personalized picks based on popularity",
+    "blogScrollPrev": "Previous articles",
+    "blogScrollNext": "Next articles"
   },
   "theme": {
     "light": "Light mode",
