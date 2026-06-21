@@ -1,29 +1,29 @@
 import type { Metadata } from "next";
-import { CartPageContent } from "@/components/cart/CartPageContent";
+import { CheckoutForm } from "@/components/cart/CheckoutForm";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { notFound } from "next/navigation";
 
-type CartPageProps = {
+type CheckoutPageProps = {
   params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({
   params,
-}: CartPageProps): Promise<Metadata> {
+}: CheckoutPageProps): Promise<Metadata> {
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) return {};
 
   const dictionary = await getDictionary(localeParam);
   return {
-    title: dictionary.nav.cart,
-    description: dictionary.cart.subtitle,
+    title: dictionary.checkout.title,
+    description: dictionary.checkout.subtitle,
   };
 }
 
-export default async function CartPage({ params }: CartPageProps) {
+export default async function CheckoutPage({ params }: CheckoutPageProps) {
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) notFound();
 
@@ -33,10 +33,14 @@ export default async function CartPage({ params }: CartPageProps) {
   return (
     <Container className="py-12">
       <SectionHeader
-        title={dictionary.nav.cart}
-        subtitle={dictionary.cart.subtitle}
+        title={dictionary.checkout.title}
+        subtitle={dictionary.checkout.subtitle}
       />
-      <CartPageContent locale={locale} labels={dictionary.cart} />
+      <CheckoutForm
+        locale={locale}
+        cartLabels={dictionary.cart}
+        labels={dictionary.checkout}
+      />
     </Container>
   );
 }
