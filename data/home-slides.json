@@ -1,0 +1,47 @@
+[
+  {
+    "id": "spring-sale",
+    "title": {
+      "fa": "حراج بهاره — تا ۳۰٪ تخفیف",
+      "en": "Spring Sale — Up to 30% Off"
+    },
+    "subtitle": {
+      "fa": "جدیدترین محصولات الکترونیک و مد با قیمت ویژه",
+      "en": "Latest electronics and fashion at special prices"
+    },
+    "cta": { "fa": "مشاهده حراج", "en": "Shop deals" },
+    "href": "/shop/products",
+    "image": "https://picsum.photos/seed/hero-spring/1400/500",
+    "badge": { "fa": "۳۰٪ تخفیف", "en": "30% off" }
+  },
+  {
+    "id": "new-tech",
+    "title": {
+      "fa": "گجت‌های هوشمند جدید",
+      "en": "New Smart Gadgets"
+    },
+    "subtitle": {
+      "fa": "هدفون، ساعت هوشمند و لوازم جانبی منتخب",
+      "en": "Headphones, smartwatches, and curated accessories"
+    },
+    "cta": { "fa": "خرید الکترونیک", "en": "Shop electronics" },
+    "href": "/shop/products/electronics",
+    "image": "https://picsum.photos/seed/hero-tech/1400/500",
+    "badge": { "fa": "جدید", "en": "New" }
+  },
+  {
+    "id": "home-living",
+    "title": {
+      "fa": "خانه مدرن و مینیمال",
+      "en": "Modern Minimal Home"
+    },
+    "subtitle": {
+      "fa": "دکور، آشپزخانه و چیدمان با ارسال رایگان",
+      "en": "Decor, kitchen, and layout picks with free shipping"
+    },
+    "cta": { "fa": "مشاهده خانه", "en": "Explore home" },
+    "href": "/shop/products/home",
+    "image": "https://picsum.photos/seed/hero-home/1400/500",
+    "badge": { "fa": "ارسال رایگان", "en": "Free shipping" }
+  }
+]

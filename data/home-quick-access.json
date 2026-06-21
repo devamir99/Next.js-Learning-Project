@@ -1,0 +1,66 @@
+[
+  {
+    "id": "shop",
+    "label": { "fa": "فروشگاه", "en": "Shop" },
+    "href": "/shop",
+    "icon": "shop",
+    "bgColor": "#fff0f1",
+    "iconColor": "#ef4056"
+  },
+  {
+    "id": "deals",
+    "label": { "fa": "حراج ویژه", "en": "Special offers" },
+    "href": "/shop/products",
+    "icon": "sale",
+    "bgColor": "#fef3c7",
+    "iconColor": "#d97706"
+  },
+  {
+    "id": "fashion",
+    "label": { "fa": "مد", "en": "Fashion" },
+    "href": "/shop/products/fashion",
+    "icon": "fashion",
+    "bgColor": "#f3e8ff",
+    "iconColor": "#9333ea"
+  },
+  {
+    "id": "electronics",
+    "label": { "fa": "موبایل", "en": "Mobile" },
+    "href": "/shop/products/electronics",
+    "icon": "mobile",
+    "bgColor": "#dbeafe",
+    "iconColor": "#2563eb"
+  },
+  {
+    "id": "blog",
+    "label": { "fa": "مجله", "en": "Magazine" },
+    "href": "/blog",
+    "icon": "blog",
+    "bgColor": "#ecfdf5",
+    "iconColor": "#059669"
+  },
+  {
+    "id": "cart",
+    "label": { "fa": "سبد خرید", "en": "Cart" },
+    "href": "/cart",
+    "icon": "cart",
+    "bgColor": "#fce7f3",
+    "iconColor": "#db2777"
+  },
+  {
+    "id": "beauty",
+    "label": { "fa": "زیبایی", "en": "Beauty" },
+    "href": "/shop/products/beauty",
+    "icon": "beauty",
+    "bgColor": "#ffe4e6",
+    "iconColor": "#e11d48"
+  },
+  {
+    "id": "sports",
+    "label": { "fa": "ورزشی", "en": "Sports" },
+    "href": "/shop/products/sports",
+    "icon": "sports",
+    "bgColor": "#dcfce7",
+    "iconColor": "#16a34a"
+  }
+]

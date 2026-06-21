@@ -1,0 +1,58 @@
+[
+  {
+    "id": "electronics",
+    "label": { "fa": "الکترونیک", "en": "Electronics" },
+    "href": "/shop/products/electronics",
+    "image": "https://picsum.photos/seed/story-electronics/200/200",
+    "ringColor": "#ef4056"
+  },
+  {
+    "id": "fashion",
+    "label": { "fa": "مد و پوشاک", "en": "Fashion" },
+    "href": "/shop/products/fashion",
+    "image": "https://picsum.photos/seed/story-fashion/200/200",
+    "ringColor": "#8b5cf6"
+  },
+  {
+    "id": "home",
+    "label": { "fa": "خانه", "en": "Home" },
+    "href": "/shop/products/home",
+    "image": "https://picsum.photos/seed/story-home/200/200",
+    "ringColor": "#0ea5e9"
+  },
+  {
+    "id": "beauty",
+    "label": { "fa": "زیبایی", "en": "Beauty" },
+    "href": "/shop/products/beauty",
+    "image": "https://picsum.photos/seed/story-beauty/200/200",
+    "ringColor": "#ec4899"
+  },
+  {
+    "id": "sports",
+    "label": { "fa": "ورزشی", "en": "Sports" },
+    "href": "/shop/products/sports",
+    "image": "https://picsum.photos/seed/story-sports/200/200",
+    "ringColor": "#22c55e"
+  },
+  {
+    "id": "books",
+    "label": { "fa": "کتاب", "en": "Books" },
+    "href": "/shop/products/books",
+    "image": "https://picsum.photos/seed/story-books/200/200",
+    "ringColor": "#f59e0b"
+  },
+  {
+    "id": "deals",
+    "label": { "fa": "حراج", "en": "Deals" },
+    "href": "/shop/products",
+    "image": "https://picsum.photos/seed/story-deals/200/200",
+    "ringColor": "#ef4056"
+  },
+  {
+    "id": "blog",
+    "label": { "fa": "مجله", "en": "Magazine" },
+    "href": "/blog",
+    "image": "https://picsum.photos/seed/story-blog/200/200",
+    "ringColor": "#6366f1"
+  }
+]
