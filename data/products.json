@@ -1,0 +1,534 @@
+[
+  {
+    "id": "p-001",
+    "slug": "wireless-headphones-x1",
+    "categorySlug": "electronics",
+    "subcategorySlug": "audio",
+    "name": { "fa": "هدفون بی‌سیم X1", "en": "Wireless Headphones X1" },
+    "shortDescription": {
+      "fa": "صدای فراگیر با حذف نویز فعال و باتری ۳۰ ساعته.",
+      "en": "Immersive sound with active noise cancellation and 30-hour battery."
+    },
+    "description": {
+      "fa": "هدفون X1 برای کار روزانه و سفر طراحی شده است. پد گوش نرم، اتصال بلوتوث پایدار و حالت ambient برای محیط‌های شلوغ.",
+      "en": "The X1 headphones are built for daily work and travel with soft ear cushions, stable Bluetooth, and ambient mode for busy environments."
+    },
+    "price": 89.99,
+    "compareAtPrice": 119.99,
+    "currency": "USD",
+    "images": [
+      "https://picsum.photos/seed/p-001-a/800/800",
+      "https://picsum.photos/seed/p-001-b/800/800"
+    ],
+    "rating": 4.7,
+    "reviewCount": 128,
+    "badge": "sale",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "p-002",
+    "slug": "smart-watch-pro",
+    "categorySlug": "electronics",
+    "subcategorySlug": "wearables",
+    "name": { "fa": "ساعت هوشمند Pro", "en": "Smart Watch Pro" },
+    "shortDescription": {
+      "fa": "پایش سلامت، GPS و مقاومت در برابر آب.",
+      "en": "Health tracking, GPS, and water resistance in a slim design."
+    },
+    "description": {
+      "fa": "Smart Watch Pro ضربان قلب، خواب و فعالیت روزانه را ردیابی می‌کند. صفحه AMOLED روشن و بند قابل تعویض.",
+      "en": "Smart Watch Pro tracks heart rate, sleep, and daily activity with a bright AMOLED display and interchangeable bands."
+    },
+    "price": 149.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-002-a/800/800"],
+    "rating": 4.5,
+    "reviewCount": 86,
+    "badge": "bestseller",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "p-003",
+    "slug": "portable-speaker-mini",
+    "categorySlug": "electronics",
+    "subcategorySlug": "audio",
+    "name": { "fa": "اسپیکر portable Mini", "en": "Portable Speaker Mini" },
+    "shortDescription": {
+      "fa": "اسپیکر جمع‌وجور با bass قوی و ضد آب IPX7.",
+      "en": "Compact speaker with strong bass and IPX7 water resistance."
+    },
+    "description": {
+      "fa": "Mini Speaker برای پیکنیک، باشگاه و خانه مناسب است. تا ۱۲ ساعت پخش موسیقی با یک بار شارژ.",
+      "en": "Mini Speaker is ideal for picnics, workouts, and home use with up to 12 hours of playback per charge."
+    },
+    "price": 49.99,
+    "compareAtPrice": 59.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-003-a/800/800"],
+    "rating": 4.3,
+    "reviewCount": 54,
+    "badge": "sale",
+    "inStock": true
+  },
+  {
+    "id": "p-004",
+    "slug": "usb-c-hub-7in1",
+    "categorySlug": "electronics",
+    "subcategorySlug": "accessories",
+    "name": { "fa": "هاب USB-C هفت‌کاره", "en": "USB-C Hub 7-in-1" },
+    "shortDescription": {
+      "fa": "اتصال HDMI، USB-A، SD و شارژ هم‌زمان لپ‌تاپ.",
+      "en": "HDMI, USB-A, SD, and pass-through charging for laptops."
+    },
+    "description": {
+      "fa": "هاب آلومینیومی برای MacBook و ultrabook. انتقال داده سریع و سازگار با نمایشگر 4K.",
+      "en": "Aluminum hub for MacBooks and ultrabooks with fast data transfer and 4K display support."
+    },
+    "price": 39.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-004-a/800/800"],
+    "rating": 4.4,
+    "reviewCount": 41,
+    "inStock": true
+  },
+  {
+    "id": "p-005",
+    "slug": "classic-denim-jacket",
+    "categorySlug": "fashion",
+    "subcategorySlug": "outerwear",
+    "name": { "fa": "کت جین کلاسیک", "en": "Classic Denim Jacket" },
+    "shortDescription": {
+      "fa": "جین درجه یک با دوخت مقاوم و برش regular fit.",
+      "en": "Premium denim with durable stitching and a regular fit."
+    },
+    "description": {
+      "fa": "کت جین کلاسیک Nova Mart با رنگ wash متوسط و آستر نرم. مناسب چهار فصل.",
+      "en": "Nova Mart classic denim jacket with medium wash and soft lining for year-round layering."
+    },
+    "price": 69.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-005-a/800/800"],
+    "rating": 4.6,
+    "reviewCount": 72,
+    "badge": "new",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "p-006",
+    "slug": "running-sneakers-lite",
+    "categorySlug": "fashion",
+    "subcategorySlug": "shoes",
+    "name": { "fa": "کفش دویدن Lite", "en": "Running Sneakers Lite" },
+    "shortDescription": {
+      "fa": "سبک، تنفس‌پذیر و مناسب دویدن روزانه.",
+      "en": "Lightweight, breathable sneakers for daily runs."
+    },
+    "description": {
+      "fa": "کفش Lite با کفی memory foam و رویه mesh برای خنک نگه داشتن پا در تمرین‌های طولانی.",
+      "en": "Lite sneakers feature memory foam insoles and mesh uppers to keep feet cool on long sessions."
+    },
+    "price": 79.99,
+    "compareAtPrice": 99.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-006-a/800/800"],
+    "rating": 4.5,
+    "reviewCount": 95,
+    "badge": "sale",
+    "inStock": true
+  },
+  {
+    "id": "p-007",
+    "slug": "leather-crossbody-bag",
+    "categorySlug": "fashion",
+    "subcategorySlug": "bags",
+    "name": { "fa": "کیف چرمی دوشی", "en": "Leather Crossbody Bag" },
+    "shortDescription": {
+      "fa": "چرم مصنوعی باکیفیت با جای کارت و زیپ داخلی.",
+      "en": "Quality faux leather with card slots and inner zip pocket."
+    },
+    "description": {
+      "fa": "کیف دوشی compact برای استفاده روزمره. بند قابل تنظیم و آستر مقاوم در برابر سایش.",
+      "en": "Compact crossbody for everyday carry with adjustable strap and abrasion-resistant lining."
+    },
+    "price": 44.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-007-a/800/800"],
+    "rating": 4.2,
+    "reviewCount": 38,
+    "inStock": true
+  },
+  {
+    "id": "p-008",
+    "slug": "cotton-oversized-hoodie",
+    "categorySlug": "fashion",
+    "subcategorySlug": "tops",
+    "name": { "fa": "هودی پنبه‌ای Oversized", "en": "Cotton Oversized Hoodie" },
+    "shortDescription": {
+      "fa": "پنبه نرم با برش oversized و کلاه دو لایه.",
+      "en": "Soft cotton with oversized fit and double-layer hood."
+    },
+    "description": {
+      "fa": "هودی راحت برای استایل casual. رنگ‌های خنثی و دوخت تمیز برای استفاده طولانی.",
+      "en": "Comfort hoodie for casual outfits with neutral tones and clean stitching built to last."
+    },
+    "price": 54.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-008-a/800/800"],
+    "rating": 4.4,
+    "reviewCount": 61,
+    "inStock": true
+  },
+  {
+    "id": "p-009",
+    "slug": "ceramic-coffee-set",
+    "categorySlug": "home",
+    "subcategorySlug": "dining",
+    "name": { "fa": "ست قهوه سرامیکی", "en": "Ceramic Coffee Set" },
+    "shortDescription": {
+      "fa": "۴ فنجان و نعلبکی با لعاب مات دست‌ساز.",
+      "en": "Four cups and saucers with handmade matte glaze."
+    },
+    "description": {
+      "fa": "ست قهوه برای میز صبحانه یا هدیه. سرامیک مقاوم حرارت و قابل استفاده در مایکروویو.",
+      "en": "Coffee set for breakfast tables or gifting with heat-resistant ceramic safe for microwave use."
+    },
+    "price": 34.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-009-a/800/800"],
+    "rating": 4.8,
+    "reviewCount": 47,
+    "badge": "bestseller",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "p-010",
+    "slug": "led-desk-lamp",
+    "categorySlug": "home",
+    "subcategorySlug": "lighting",
+    "name": { "fa": "چراغ مطالعه LED", "en": "LED Desk Lamp" },
+    "shortDescription": {
+      "fa": "نور قابل تنظیم، پورت USB و arm انعطاف‌پذیر.",
+      "en": "Adjustable brightness, USB port, and flexible arm."
+    },
+    "description": {
+      "fa": "چراغ LED با سه حالت رنگ نور warm/neutral/cool. مناسب میز کار و مطالعه شبانه.",
+      "en": "LED lamp with warm, neutral, and cool light modes for desks and late-night reading."
+    },
+    "price": 29.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-010-a/800/800"],
+    "rating": 4.3,
+    "reviewCount": 33,
+    "inStock": true
+  },
+  {
+    "id": "p-011",
+    "slug": "nonstick-cookware-set",
+    "categorySlug": "home",
+    "subcategorySlug": "kitchen",
+    "name": { "fa": "ست قابلمه نچسب ۱۰ پارچه", "en": "Nonstick Cookware Set 10pc" },
+    "shortDescription": {
+      "fa": "پوشش نچسب، دسته heat-proof و مناسب انواع اجاق.",
+      "en": "Nonstick coating, heat-proof handles, and all-stove compatibility."
+    },
+    "description": {
+      "fa": "ست ۱۰ پارچه شامل قابلمه، تابه و درب شیشه‌ای. تمیزکاری آسان و توزیع یکنواخت حرارت.",
+      "en": "Ten-piece set with pots, pans, and glass lids for easy cleaning and even heat distribution."
+    },
+    "price": 119.99,
+    "compareAtPrice": 149.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-011-a/800/800"],
+    "rating": 4.6,
+    "reviewCount": 58,
+    "badge": "sale",
+    "inStock": true
+  },
+  {
+    "id": "p-012",
+    "slug": "memory-foam-pillow",
+    "categorySlug": "home",
+    "subcategorySlug": "bedding",
+    "name": { "fa": "بالش memory foam", "en": "Memory Foam Pillow" },
+    "shortDescription": {
+      "fa": "پشتیبانی گردن با روکش قابل شستشو.",
+      "en": "Neck support core with washable cover."
+    },
+    "description": {
+      "fa": "بالش memory foam برای خواب عمیق‌تر. طراحی ergonomic و خنثی‌کننده حساسیت.",
+      "en": "Memory foam pillow for deeper sleep with ergonomic shaping and hypoallergenic materials."
+    },
+    "price": 42.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-012-a/800/800"],
+    "rating": 4.5,
+    "reviewCount": 64,
+    "inStock": true
+  },
+  {
+    "id": "p-013",
+    "slug": "yoga-mat-premium",
+    "categorySlug": "sports",
+    "subcategorySlug": "fitness",
+    "name": { "fa": "مت یوگا پریمیوم", "en": "Premium Yoga Mat" },
+    "shortDescription": {
+      "fa": "ضد لغزش، ۶mm ضخامت و بند حمل.",
+      "en": "Non-slip surface, 6mm thickness, and carry strap."
+    },
+    "description": {
+      "fa": "مت یوگا با cushioning مناسب مفاصل. سطح grippy برای کلاس و تمرین خانگی.",
+      "en": "Yoga mat with joint-friendly cushioning and grippy surface for studio or home practice."
+    },
+    "price": 36.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-013-a/800/800"],
+    "rating": 4.7,
+    "reviewCount": 89,
+    "badge": "bestseller",
+    "inStock": true
+  },
+  {
+    "id": "p-014",
+    "slug": "trekking-backpack-40l",
+    "categorySlug": "sports",
+    "subcategorySlug": "outdoor",
+    "name": { "fa": "کوله کوهنوردی ۴۰ لیتری", "en": "Trekking Backpack 40L" },
+    "shortDescription": {
+      "fa": "ظرفیت ۴۰ لیتر، ضد آب و پشتی ventilated.",
+      "en": "40L capacity, water-resistant shell, and ventilated back panel."
+    },
+    "description": {
+      "fa": "کوله مناسب سفر چند روزه با جای laptop و بندهای قابل تنظیم سینه/کمر.",
+      "en": "Multi-day travel backpack with laptop sleeve and adjustable chest and waist straps."
+    },
+    "price": 89.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-014-a/800/800"],
+    "rating": 4.5,
+    "reviewCount": 52,
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "p-015",
+    "slug": "stainless-water-bottle",
+    "categorySlug": "sports",
+    "subcategorySlug": "accessories",
+    "name": { "fa": "بottle استیل 750ml", "en": "Stainless Bottle 750ml" },
+    "shortDescription": {
+      "fa": "عایق دما ۲۴ ساعته، inox و بدون BPA.",
+      "en": "24-hour insulation, stainless steel, BPA-free."
+    },
+    "description": {
+      "fa": "بottle دو جداره برای نوشیدنی سرد یا گرم. درب leak-proof و مناسب باشگاه.",
+      "en": "Double-wall bottle keeps drinks hot or cold with leak-proof lid for gym and commute."
+    },
+    "price": 24.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-015-a/800/800"],
+    "rating": 4.4,
+    "reviewCount": 77,
+    "inStock": true
+  },
+  {
+    "id": "p-016",
+    "slug": "resistance-bands-set",
+    "categorySlug": "sports",
+    "subcategorySlug": "fitness",
+    "name": { "fa": "ست کش مقاومتی", "en": "Resistance Bands Set" },
+    "shortDescription": {
+      "fa": "۵ سطح مقاومت با دستگیره و کیف نگهداری.",
+      "en": "Five resistance levels with handles and carry bag."
+    },
+    "description": {
+      "fa": "ست کش برای تقویت و rehab. latex باکیفیت و راهنمای تمرین چاپی.",
+      "en": "Band set for strength and rehab with quality latex and printed workout guide."
+    },
+    "price": 27.99,
+    "compareAtPrice": 34.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-016-a/800/800"],
+    "rating": 4.2,
+    "reviewCount": 44,
+    "badge": "sale",
+    "inStock": true
+  },
+  {
+    "id": "p-017",
+    "slug": "vitamin-c-serum",
+    "categorySlug": "beauty",
+    "subcategorySlug": "skincare",
+    "name": { "fa": "سرم ویتامین C", "en": "Vitamin C Serum" },
+    "shortDescription": {
+      "fa": "روشن‌کننده پوست با ۱۵٪ ویتامین C پایدار.",
+      "en": "Brightening serum with 15% stabilized vitamin C."
+    },
+    "description": {
+      "fa": "سرم سبک برای کاهش لک و یکنواخت‌کردن رنگ پوست. مناسب استفاده صبح زیر ضدآفتاب.",
+      "en": "Lightweight serum to reduce dark spots and even tone. Use in the morning under SPF."
+    },
+    "price": 32.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-017-a/800/800"],
+    "rating": 4.6,
+    "reviewCount": 103,
+    "badge": "new",
+    "inStock": true
+  },
+  {
+    "id": "p-018",
+    "slug": "floral-eau-de-parfum",
+    "categorySlug": "beauty",
+    "subcategorySlug": "fragrance",
+    "name": { "fa": "ادکلن floral", "en": "Floral Eau de Parfum" },
+    "shortDescription": {
+      "fa": "رایحه گلی ملایم با ماندگاری ۸ ساعته.",
+      "en": "Soft floral scent with up to 8 hours longevity."
+    },
+    "description": {
+      "fa": "ترکیب notes یاس و چوب صندل. بطری ۵۰ml با اسپری fine mist.",
+      "en": "Blend of jasmine and sandalwood in a 50ml bottle with fine mist spray."
+    },
+    "price": 58.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-018-a/800/800"],
+    "rating": 4.4,
+    "reviewCount": 49,
+    "inStock": true
+  },
+  {
+    "id": "p-019",
+    "slug": "hydrating-face-cream",
+    "categorySlug": "beauty",
+    "subcategorySlug": "skincare",
+    "name": { "fa": "کرم آبرسان صورت", "en": "Hydrating Face Cream" },
+    "shortDescription": {
+      "fa": "آبرسانی ۴۸ ساعته با هیالورونیک اسید.",
+      "en": "48-hour hydration with hyaluronic acid."
+    },
+    "description": {
+      "fa": "کرم سبک بدون احساس چربی. مناسب پوست normal تا dry و استفاده شب/روز.",
+      "en": "Non-greasy cream for normal to dry skin suitable for day and night routines."
+    },
+    "price": 26.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-019-a/800/800"],
+    "rating": 4.5,
+    "reviewCount": 67,
+    "inStock": true
+  },
+  {
+    "id": "p-020",
+    "slug": "electric-toothbrush",
+    "categorySlug": "beauty",
+    "subcategorySlug": "personal-care",
+    "name": { "fa": "مسواک برقی Sonic", "en": "Sonic Electric Toothbrush" },
+    "shortDescription": {
+      "fa": "۳ حالت شستشو و تایمر ۲ دقیقه‌ای.",
+      "en": "Three cleaning modes and 2-minute timer."
+    },
+    "description": {
+      "fa": "مسواک sonic با سری soft و stand شارژ. باتری تا ۳ هفته با شارژ کامل.",
+      "en": "Sonic toothbrush with soft head and charging stand. Up to three weeks per full charge."
+    },
+    "price": 45.99,
+    "compareAtPrice": 59.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-020-a/800/800"],
+    "rating": 4.3,
+    "reviewCount": 55,
+    "badge": "sale",
+    "inStock": false
+  },
+  {
+    "id": "p-021",
+    "slug": "creative-productivity-journal",
+    "categorySlug": "books",
+    "subcategorySlug": "journals",
+    "name": { "fa": "ژورنال بهره‌وری", "en": "Creative Productivity Journal" },
+    "shortDescription": {
+      "fa": "صفحات dotted، ribbon bookmark و جلد سخت.",
+      "en": "Dotted pages, ribbon bookmark, and hard cover."
+    },
+    "description": {
+      "fa": "ژورنال برای برنامه‌ریزی روزانه و یادداشت ایده. کاغذ ۱۲۰gsm بدون bleed.",
+      "en": "Journal for daily planning and idea capture with 120gsm no-bleed paper."
+    },
+    "price": 19.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-021-a/800/800"],
+    "rating": 4.8,
+    "reviewCount": 91,
+    "badge": "bestseller",
+    "inStock": true
+  },
+  {
+    "id": "p-022",
+    "slug": "modern-ui-design-book",
+    "categorySlug": "books",
+    "subcategorySlug": "books",
+    "name": { "fa": "کتاب طراحی UI مدرن", "en": "Modern UI Design Book" },
+    "shortDescription": {
+      "fa": "اصول layout، typography و design system.",
+      "en": "Layout, typography, and design system fundamentals."
+    },
+    "description": {
+      "fa": "راهنمای عملی برای طراحان و توسعه‌دهندگان frontend با مثال‌های real-world.",
+      "en": "Practical guide for designers and frontend developers with real-world examples."
+    },
+    "price": 34.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-022-a/800/800"],
+    "rating": 4.7,
+    "reviewCount": 36,
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "p-023",
+    "slug": "gel-pen-set-12",
+    "categorySlug": "books",
+    "subcategorySlug": "stationery",
+    "name": { "fa": "ست خودکار ژل ۱۲ رنگ", "en": "Gel Pen Set 12 Colors" },
+    "shortDescription": {
+      "fa": "جوهر روان، tip ۰.۷mm و body ergonomic.",
+      "en": "Smooth ink, 0.7mm tip, and ergonomic body."
+    },
+    "description": {
+      "fa": "ست ۱۲ رنگ برای bullet journal، sketch و note-taking روزانه.",
+      "en": "Twelve-color set for bullet journaling, sketching, and daily notes."
+    },
+    "price": 14.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-023-a/800/800"],
+    "rating": 4.4,
+    "reviewCount": 58,
+    "inStock": true
+  },
+  {
+    "id": "p-024",
+    "slug": "desk-organizer-set",
+    "categorySlug": "books",
+    "subcategorySlug": "stationery",
+    "name": { "fa": "ست نظم‌دهنده میز", "en": "Desk Organizer Set" },
+    "shortDescription": {
+      "fa": "۳ قطعه bamboo با جای قلم، کارت و گوشی.",
+      "en": "Three-piece bamboo set for pens, cards, and phone."
+    },
+    "description": {
+      "fa": "ست bamboo برای میز کار مرتب. surface طبیعی و پایدار با pad ضد لغزش.",
+      "en": "Bamboo desk organizer with natural finish and non-slip base pads."
+    },
+    "price": 29.99,
+    "currency": "USD",
+    "images": ["https://picsum.photos/seed/p-024-a/800/800"],
+    "rating": 4.3,
+    "reviewCount": 29,
+    "badge": "new",
+    "inStock": true
+  }
+]

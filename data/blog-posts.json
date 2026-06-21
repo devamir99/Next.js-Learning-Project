@@ -1,0 +1,245 @@
+[
+  {
+    "slug": "how-to-choose-wireless-headphones",
+    "categorySlug": "guides",
+    "title": {
+      "fa": "راهنمای انتخاب هدفون بی‌سیم",
+      "en": "How to Choose Wireless Headphones"
+    },
+    "excerpt": {
+      "fa": "نکات مهم ANC، باتری و راحتی قبل از خرید.",
+      "en": "What to check for ANC, battery life, and comfort before buying."
+    },
+    "content": {
+      "fa": "قبل از خرید هدفون بی‌سیم، نوع استفاده خود را مشخص کنید. برای سفر ANC مهم است، برای ورزش وزن و مقاومت عرق اولویت دارد.",
+      "en": "Before buying wireless headphones, define your use case. ANC matters for travel, while weight and sweat resistance matter for workouts."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-001/1200/675",
+    "author": { "fa": "امیر محمدی", "en": "Amir Mohammadi" },
+    "publishedAt": "2026-02-18",
+    "readTimeMinutes": 6,
+    "featured": true
+  },
+  {
+    "slug": "kitchen-upgrade-checklist",
+    "categorySlug": "guides",
+    "title": {
+      "fa": "چک‌لیست ارتقای آشپزخانه",
+      "en": "Kitchen Upgrade Checklist"
+    },
+    "excerpt": {
+      "fa": "۵ ابزار ضروری که واقعاً استفاده می‌کنید.",
+      "en": "Five essential tools you will actually use."
+    },
+    "content": {
+      "fa": "به‌جای خرید impulse، روی قابلمه باکیفیت، چاقوی تیز و روشنایی مناسب سرمایه‌گذاری کنید.",
+      "en": "Instead of impulse buys, invest in quality cookware, sharp knives, and proper lighting."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-002/1200/675",
+    "author": { "fa": "سارا رضایی", "en": "Sara Rezaei" },
+    "publishedAt": "2026-02-10",
+    "readTimeMinutes": 5
+  },
+  {
+    "slug": "running-shoes-fit-guide",
+    "categorySlug": "guides",
+    "title": {
+      "fa": "راهنمای سایز کفش دویدن",
+      "en": "Running Shoes Fit Guide"
+    },
+    "excerpt": {
+      "fa": "چطور سایز درست را آنلاین انتخاب کنیم.",
+      "en": "How to pick the right size when shopping online."
+    },
+    "content": {
+      "fa": "اندازه پا را عصر بگیرید، نیم سایز فضای انگشت رعایت کنید و نوع pronation را در نظر بگیرید.",
+      "en": "Measure feet in the evening, leave toe room, and consider your pronation type."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-003/1200/675",
+    "author": { "fa": "امیر محمدی", "en": "Amir Mohammadi" },
+    "publishedAt": "2026-01-28",
+    "readTimeMinutes": 4
+  },
+  {
+    "slug": "smart-watch-pro-review",
+    "categorySlug": "reviews",
+    "title": {
+      "fa": "بررسی Smart Watch Pro",
+      "en": "Smart Watch Pro Review"
+    },
+    "excerpt": {
+      "fa": "آیا این ساعت برای استفاده روزانه ارزش دارد؟",
+      "en": "Is this watch worth it for everyday use?"
+    },
+    "content": {
+      "fa": "باتری خوب، UI روان و سنسورهای دقیق از نقاط قوت هستند. اپ‌های third-party محدودتر از رقبا.",
+      "en": "Strong battery, smooth UI, and accurate sensors stand out. Third-party apps are more limited than rivals."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-004/1200/675",
+    "author": { "fa": "سارا رضایی", "en": "Sara Rezaei" },
+    "publishedAt": "2026-02-22",
+    "readTimeMinutes": 7,
+    "featured": true
+  },
+  {
+    "slug": "ceramic-coffee-set-review",
+    "categorySlug": "reviews",
+    "title": {
+      "fa": "نقد ست قهوه سرامیکی",
+      "en": "Ceramic Coffee Set Review"
+    },
+    "excerpt": {
+      "fa": "طراحی مینیمال با کیفیت ساخت بالا.",
+      "en": "Minimal design with solid build quality."
+    },
+    "content": {
+      "fa": "لعاب یکدست، وزن مناسب فنجان و بسته‌بندی امن از دلایل پیشنهاد این محصول هستند.",
+      "en": "Even glaze, balanced cup weight, and secure packaging make this set easy to recommend."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-005/1200/675",
+    "author": { "fa": "امیر محمدی", "en": "Amir Mohammadi" },
+    "publishedAt": "2026-02-05",
+    "readTimeMinutes": 4
+  },
+  {
+    "slug": "trekking-backpack-field-test",
+    "categorySlug": "reviews",
+    "title": {
+      "fa": "تست میدانی کوله ۴۰ لیتری",
+      "en": "Trekking Backpack Field Test"
+    },
+    "excerpt": {
+      "fa": "۳ روز کوهنوردی با کوله Nova Mart.",
+      "en": "Three days on the trail with the Nova Mart backpack."
+    },
+    "content": {
+      "fa": "توزیع وزن عالی و پشتی breathable بود. جیب side برای bottle کمی تنگ.",
+      "en": "Weight distribution and breathable back panel performed well. Side bottle pocket felt tight."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-006/1200/675",
+    "author": { "fa": "سارا رضایی", "en": "Sara Rezaei" },
+    "publishedAt": "2026-01-20",
+    "readTimeMinutes": 8
+  },
+  {
+    "slug": "spring-sale-announcement",
+    "categorySlug": "news",
+    "title": {
+      "fa": "شروع حراج بهاره",
+      "en": "Spring Sale Is Live"
+    },
+    "excerpt": {
+      "fa": "تا ۳۰٪ تخفیف روی مد، خانه و ورزش.",
+      "en": "Up to 30% off fashion, home, and sports."
+    },
+    "content": {
+      "fa": "حراج بهاره Nova Mart از امروز فعال است. badge قرمز محصولات شامل تخفیف می‌شوند.",
+      "en": "Nova Mart spring sale starts today. Look for red sale badges across the catalog."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-007/1200/675",
+    "author": { "fa": "تیم تحریریه", "en": "Editorial Team" },
+    "publishedAt": "2026-03-01",
+    "readTimeMinutes": 3,
+    "featured": true
+  },
+  {
+    "slug": "new-beauty-arrivals",
+    "categorySlug": "news",
+    "title": {
+      "fa": "محصولات جدید زیبایی",
+      "en": "New Beauty Arrivals"
+    },
+    "excerpt": {
+      "fa": "سرم ویتامین C و کرم آبرسان به کatalog اضافه شد.",
+      "en": "Vitamin C serum and hydrating cream join the catalog."
+    },
+    "content": {
+      "fa": "خط skincare جدید با فرمولاسیون سبک و بسته‌بندی پایدار عرضه شده است.",
+      "en": "A new skincare line launches with lightweight formulas and sustainable packaging."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-008/1200/675",
+    "author": { "fa": "تیم تحریریه", "en": "Editorial Team" },
+    "publishedAt": "2026-02-14",
+    "readTimeMinutes": 3
+  },
+  {
+    "slug": "free-shipping-policy-update",
+    "categorySlug": "news",
+    "title": {
+      "fa": "به‌روزرسانی ارسال رایگان",
+      "en": "Free Shipping Policy Update"
+    },
+    "excerpt": {
+      "fa": "حداقل سفارش برای ارسال رایگان کاهش یافت.",
+      "en": "Minimum order for free shipping has been lowered."
+    },
+    "content": {
+      "fa": "از این هفته سفارش‌های بالای ۵۰ دلار ارسال رایگان دارند.",
+      "en": "Starting this week, orders over $50 qualify for free shipping."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-009/1200/675",
+    "author": { "fa": "تیم تحریریه", "en": "Editorial Team" },
+    "publishedAt": "2026-02-01",
+    "readTimeMinutes": 2
+  },
+  {
+    "slug": "save-on-electronics",
+    "categorySlug": "tips",
+    "title": {
+      "fa": "۵ ترفند خرید الکترونیک",
+      "en": "5 Tips to Save on Electronics"
+    },
+    "excerpt": {
+      "fa": "چطور smart خرید کنیم بدون از دست دادن کیفیت.",
+      "en": "How to shop smart without sacrificing quality."
+    },
+    "content": {
+      "fa": "لیست wishlist بسازید، bundle deals را compare کنید و specs واقعی را با نیازتان بسنجید.",
+      "en": "Build a wishlist, compare bundle deals, and match specs to real needs."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-010/1200/675",
+    "author": { "fa": "امیر محمدی", "en": "Amir Mohammadi" },
+    "publishedAt": "2026-02-08",
+    "readTimeMinutes": 5
+  },
+  {
+    "slug": "cart-checkout-mistakes",
+    "categorySlug": "tips",
+    "title": {
+      "fa": "اشتباهات رایج قبل از checkout",
+      "en": "Common Cart Mistakes Before Checkout"
+    },
+    "excerpt": {
+      "fa": "این موارد را قبل از پرداخت چک کنید.",
+      "en": "Check these items before you pay."
+    },
+    "content": {
+      "fa": "سایز، آدرس، کد تخفیف و هزینه shipping را دوباره بررسی کنید تا مرجوعی کم شود.",
+      "en": "Double-check size, address, promo codes, and shipping fees to reduce returns."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-011/1200/675",
+    "author": { "fa": "سارا رضایی", "en": "Sara Rezaei" },
+    "publishedAt": "2026-01-15",
+    "readTimeMinutes": 4
+  },
+  {
+    "slug": "seasonal-wardrobe-budget",
+    "categorySlug": "tips",
+    "title": {
+      "fa": "بودجه‌بندی کمد فصلی",
+      "en": "Seasonal Wardrobe Budgeting"
+    },
+    "excerpt": {
+      "fa": "ترکیب basics و statement pieces.",
+      "en": "Mix basics with a few statement pieces."
+    },
+    "content": {
+      "fa": "۷۰٪ بودجه را به basics بادوام اختصاص دهید و ۳۰٪ برای trend items کنار بگذارید.",
+      "en": "Allocate 70% of budget to durable basics and 30% to trend-driven items."
+    },
+    "coverImage": "https://picsum.photos/seed/blog-012/1200/675",
+    "author": { "fa": "امیر محمدی", "en": "Amir Mohammadi" },
+    "publishedAt": "2026-01-05",
+    "readTimeMinutes": 6
+  }
+]

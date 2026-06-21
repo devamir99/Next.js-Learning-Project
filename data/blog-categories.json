@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "guides",
+    "name": { "fa": "راهنما", "en": "Guides" },
+    "description": {
+      "fa": "راهنمای خرید و نکات کاربردی",
+      "en": "Buying guides and practical tips"
+    },
+    "postCount": 3
+  },
+  {
+    "slug": "reviews",
+    "name": { "fa": "بررسی محصول", "en": "Reviews" },
+    "description": {
+      "fa": "نقد و مقایسه محصولات منتخب",
+      "en": "Hands-on reviews and product comparisons"
+    },
+    "postCount": 3
+  },
+  {
+    "slug": "news",
+    "name": { "fa": "اخبار", "en": "News" },
+    "description": {
+      "fa": "تازه‌های فروشگاه و ترندهای بازار",
+      "en": "Store updates and market trends"
+    },
+    "postCount": 3
+  },
+  {
+    "slug": "tips",
+    "name": { "fa": "ترفندها", "en": "Tips" },
+    "description": {
+      "fa": "ترفندهای خرید آنلاین و صرفه‌جویی",
+      "en": "Online shopping hacks and savings"
+    },
+    "postCount": 3
+  }
+]

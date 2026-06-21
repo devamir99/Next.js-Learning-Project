@@ -1,0 +1,182 @@
+[
+  {
+    "id": "r-001",
+    "productId": "p-001",
+    "author": "Nima K.",
+    "rating": 5,
+    "title": { "fa": "صدای عالی", "en": "Great sound" },
+    "body": {
+      "fa": "ANC واقعاً محیط open office را ساکت می‌کند. باتری هم طبق ادعا دوام می‌آورد.",
+      "en": "ANC really quiets our open office. Battery life matches the claims too."
+    },
+    "createdAt": "2026-02-01"
+  },
+  {
+    "id": "r-002",
+    "productId": "p-001",
+    "author": "Leila M.",
+    "rating": 4,
+    "title": { "fa": "راحت ولی کمی سنگین", "en": "Comfortable but slightly heavy" },
+    "body": {
+      "fa": "کیفیت صدا عالی است. برای سفرهای طولانی کمی فشار به گوش می‌آید.",
+      "en": "Sound quality is excellent. A bit of ear pressure on very long trips."
+    },
+    "createdAt": "2026-01-20"
+  },
+  {
+    "id": "r-003",
+    "productId": "p-001",
+    "author": "Jason P.",
+    "rating": 5,
+    "title": { "fa": "ارزش خرید در تخفیف", "en": "Worth it on sale" },
+    "body": {
+      "fa": "با قیمت تخفیف‌خورده انتخاب بسیار خوبی است.",
+      "en": "At the discounted price this is an easy recommendation."
+    },
+    "createdAt": "2026-01-12"
+  },
+  {
+    "id": "r-004",
+    "productId": "p-002",
+    "author": "Maryam S.",
+    "rating": 4,
+    "title": { "fa": "GPS دقیق", "en": "Accurate GPS" },
+    "body": {
+      "fa": "برای دویدن outdoor GPS پایدار است. اپ کمی شلوغ به نظر می‌رسد.",
+      "en": "GPS is stable for outdoor runs. The app UI feels a bit busy."
+    },
+    "createdAt": "2026-02-10"
+  },
+  {
+    "id": "r-005",
+    "productId": "p-002",
+    "author": "Chris W.",
+    "rating": 5,
+    "title": { "fa": "باتری فوق‌العاده", "en": "Excellent battery" },
+    "body": {
+      "fa": "حدود ۵ روز با استفاده معمول شارژ می‌ماند.",
+      "en": "Lasts about five days with typical use."
+    },
+    "createdAt": "2026-01-30"
+  },
+  {
+    "id": "r-006",
+    "productId": "p-005",
+    "author": "Hannah R.",
+    "rating": 5,
+    "title": { "fa": "fit عالی", "en": "Perfect fit" },
+    "body": {
+      "fa": "جین نرم و دوخت تمیز. regular fit دقیقاً همان چیزی بود که می‌خواستم.",
+      "en": "Soft denim and clean stitching. Regular fit is exactly what I wanted."
+    },
+    "createdAt": "2026-02-05"
+  },
+  {
+    "id": "r-007",
+    "productId": "p-005",
+    "author": "Reza A.",
+    "rating": 4,
+    "title": { "fa": "رنگ زیبا", "en": "Nice wash" },
+    "body": {
+      "fa": "بعد از دو شستشو رنگ ثابت مانده است.",
+      "en": "Color stayed consistent after two washes."
+    },
+    "createdAt": "2026-01-18"
+  },
+  {
+    "id": "r-008",
+    "productId": "p-009",
+    "author": "Elena V.",
+    "rating": 5,
+    "title": { "fa": "هدیه عالی", "en": "Great gift" },
+    "body": {
+      "fa": "بسته‌بندی شیک و کیفیت سرامیک بالاتر از انتظار.",
+      "en": "Elegant packaging and ceramic quality above expectations."
+    },
+    "createdAt": "2026-02-12"
+  },
+  {
+    "id": "r-009",
+    "productId": "p-009",
+    "author": "Omid T.",
+    "rating": 5,
+    "title": { "fa": "ظریف و باکیفیت", "en": "Delicate and premium" },
+    "body": {
+      "fa": "لعاب مات حس premium می‌دهد.",
+      "en": "The matte glaze feels premium in hand."
+    },
+    "createdAt": "2026-01-25"
+  },
+  {
+    "id": "r-010",
+    "productId": "p-013",
+    "author": "Sophie L.",
+    "rating": 4,
+    "title": { "fa": "گریپ خوب", "en": "Good grip" },
+    "body": {
+      "fa": "روی پارکت لغزش ندارد. بند حمل هم کاربردی است.",
+      "en": "No slipping on hardwood. Carry strap is handy too."
+    },
+    "createdAt": "2026-02-03"
+  },
+  {
+    "id": "r-011",
+    "productId": "p-014",
+    "author": "Daniel F.",
+    "rating": 5,
+    "title": { "fa": "مناسب سفر", "en": "Travel ready" },
+    "body": {
+      "fa": "۴ روز مسیر با ۴۰ لیتر جا شد. پشتی هم خیلی داغ نشد.",
+      "en": "Fitted four days of trail gear in 40L. Back panel stayed cool."
+    },
+    "createdAt": "2026-01-22"
+  },
+  {
+    "id": "r-012",
+    "productId": "p-017",
+    "author": "Mina H.",
+    "rating": 5,
+    "title": { "fa": "پوست شفاف‌تر", "en": "Brighter skin" },
+    "body": {
+      "fa": "بعد از ۳ هفته لک‌های کوچک کمرنگ‌تر شده‌اند.",
+      "en": "Small dark spots faded after three weeks of use."
+    },
+    "createdAt": "2026-02-15"
+  },
+  {
+    "id": "r-013",
+    "productId": "p-017",
+    "author": "Kate B.",
+    "rating": 4,
+    "title": { "fa": "سبک و سریع‌جذب", "en": "Light and fast absorbing" },
+    "body": {
+      "fa": "زیر makeup هم مشکل ایجاد نکرد.",
+      "en": "Works fine under makeup without pilling."
+    },
+    "createdAt": "2026-02-01"
+  },
+  {
+    "id": "r-014",
+    "productId": "p-021",
+    "author": "Ali N.",
+    "rating": 5,
+    "title": { "fa": "کاغذ عالی", "en": "Excellent paper" },
+    "body": {
+      "fa": "ماژیک gel bleed نمی‌کند. برای bullet journal عالی است.",
+      "en": "Gel pens do not bleed. Perfect for bullet journaling."
+    },
+    "createdAt": "2026-02-08"
+  },
+  {
+    "id": "r-015",
+    "productId": "p-022",
+    "author": "Tom G.",
+    "rating": 5,
+    "title": { "fa": "کاربردی برای dev", "en": "Practical for devs" },
+    "body": {
+      "fa": "مثال‌های design system واقعاً به درد کار روزانه می‌خورد.",
+      "en": "Design system examples are directly useful at work."
+    },
+    "createdAt": "2026-01-28"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "electronics",
+    "name": { "fa": "الکترونیک", "en": "Electronics" },
+    "description": {
+      "fa": "گوشی، لپ‌تاپ، هدفون و گجت‌های هوشمند",
+      "en": "Phones, laptops, headphones, and smart gadgets"
+    },
+    "image": "https://picsum.photos/seed/cat-electronics/800/600",
+    "productCount": 4
+  },
+  {
+    "slug": "fashion",
+    "name": { "fa": "مد و پوشاک", "en": "Fashion" },
+    "description": {
+      "fa": "لباس، کفش و اکسسوری‌های روز",
+      "en": "Clothing, shoes, and everyday accessories"
+    },
+    "image": "https://picsum.photos/seed/cat-fashion/800/600",
+    "productCount": 4
+  },
+  {
+    "slug": "home",
+    "name": { "fa": "خانه و آشپزخانه", "en": "Home & Kitchen" },
+    "description": {
+      "fa": "دکور، لوازم آشپزخانه و چیدمان خانه",
+      "en": "Decor, kitchenware, and home essentials"
+    },
+    "image": "https://picsum.photos/seed/cat-home/800/600",
+    "productCount": 4
+  },
+  {
+    "slug": "sports",
+    "name": { "fa": "ورزش و سفر", "en": "Sports & Travel" },
+    "description": {
+      "fa": "تجهیزات ورزشی، کوله‌پشتی و لوازم سفر",
+      "en": "Sports gear, backpacks, and travel essentials"
+    },
+    "image": "https://picsum.photos/seed/cat-sports/800/600",
+    "productCount": 4
+  },
+  {
+    "slug": "beauty",
+    "name": { "fa": "زیبایی و سلامت", "en": "Beauty & Health" },
+    "description": {
+      "fa": "مراقبت پوست، عطر و محصولات بهداشتی",
+      "en": "Skincare, fragrance, and wellness products"
+    },
+    "image": "https://picsum.photos/seed/cat-beauty/800/600",
+    "productCount": 4
+  },
+  {
+    "slug": "books",
+    "name": { "fa": "کتاب و لوازم‌التحریر", "en": "Books & Stationery" },
+    "description": {
+      "fa": "کتاب، دفتر و ابزارهای خلاقیت",
+      "en": "Books, notebooks, and creative tools"
+    },
+    "image": "https://picsum.photos/seed/cat-books/800/600",
+    "productCount": 4
+  }
+]
