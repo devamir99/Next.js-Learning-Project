@@ -22,19 +22,19 @@ export function StoreFooter({ locale, dictionary }: StoreFooterProps) {
 
   return (
     <footer className="mt-auto border-t border-border bg-card">
-      <Container className="py-10">
-        <div className="grid gap-8 md:grid-cols-2">
+      <Container className="py-12">
+        <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <p className="text-lg font-bold text-primary">{meta.title}</p>
-            <p className="mt-2 max-w-md text-sm text-muted-foreground">
+            <p className="text-xl font-bold text-primary">{meta.title}</p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">
               {footer.tagline}
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
               {footer.quickLinks}
             </h3>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-4 space-y-2.5">
               {links.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -47,8 +47,20 @@ export function StoreFooter({ locale, dictionary }: StoreFooterProps) {
               ))}
             </ul>
           </div>
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
+              {footer.contactTitle}
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
+              <li>{footer.email}</li>
+              <li dir="ltr" className="text-start">
+                {footer.phone}
+              </li>
+              <li>{footer.address}</li>
+            </ul>
+          </div>
         </div>
-        <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-10 border-t border-border pt-6 text-center text-sm text-muted-foreground">
           © {year} {meta.title}. {footer.rights}
         </div>
       </Container>

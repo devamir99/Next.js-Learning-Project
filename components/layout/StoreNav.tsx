@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher";
+import { MobileMenu } from "@/components/layout/MobileMenu";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/types";
@@ -24,12 +25,19 @@ export function StoreNav({ locale, dictionary }: StoreNavProps) {
     <header className="sticky top-0 z-50 border-b border-border bg-card/90 backdrop-blur-md">
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link
-            href={`/${locale}`}
-            className="text-xl font-bold tracking-tight text-primary"
-          >
-            {meta.title}
-          </Link>
+          <div className="flex items-center gap-2">
+            <MobileMenu
+              locale={locale}
+              dictionary={dictionary}
+              navItems={navItems}
+            />
+            <Link
+              href={`/${locale}`}
+              className="text-xl font-bold tracking-tight text-primary"
+            >
+              {meta.title}
+            </Link>
+          </div>
 
           <nav className="hidden items-center gap-6 md:flex">
             {navItems.map((item) => (
@@ -41,6 +49,12 @@ export function StoreNav({ locale, dictionary }: StoreNavProps) {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href={`/${locale}/contact`}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              {nav.contact}
+            </Link>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -54,22 +68,12 @@ export function StoreNav({ locale, dictionary }: StoreNavProps) {
               </svg>
               <span className="hidden sm:inline">{nav.cart}</span>
             </Link>
-            <LocaleSwitcher locale={locale} label={localeLabels.switch} />
-            <ThemeToggle labels={theme} />
+            <div className="hidden items-center gap-2 md:flex">
+              <LocaleSwitcher locale={locale} label={localeLabels.switch} />
+              <ThemeToggle labels={theme} />
+            </div>
           </div>
         </div>
-
-        <nav className="flex gap-4 overflow-x-auto border-t border-border py-3 md:hidden">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="whitespace-nowrap text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
       </Container>
     </header>
   );
