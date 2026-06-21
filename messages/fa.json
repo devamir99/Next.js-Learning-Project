@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "نوا مارکت",
-    "description": "ماکت فروشگاه آنلاین — نمونه کار فرانت‌اند"
+    "description": "ماکت فروشگاه آنلاین — خرید آسان، طراحی مدرن، تجربه دو زبانه"
   },
   "nav": {
     "home": "خانه",
@@ -9,13 +9,27 @@
     "blog": "بلاگ",
     "about": "درباره ما",
     "contact": "تماس",
-    "cart": "سبد خرید"
+    "cart": "سبد خرید",
+    "menu": "منو",
+    "closeMenu": "بستن منو"
+  },
+  "promo": {
+    "message": "ارسال رایگان برای سفارش‌های بالای ۵۰ دلار — حراج بهاره فعال است"
   },
   "home": {
-    "heroTitle": "فروشگاه آنلاین نوا مارکت",
-    "heroSubtitle": "ماکت فروشگاهی دو زبانه با تم قرمز — در حال ساخت",
-    "heroCta": "مشاهده فروشگاه",
-    "comingSoon": "به‌زودی..."
+    "heroBadge": "کلکسیون بهاره ۱۴۰۵",
+    "heroTitle": "سبک زندگی مدرن با نوا مارکت",
+    "heroSubtitle": "محصولات منتخب الکترونیک، مد، خانه و زیبایی — mockup فروشگاه دو زبانه با تم قرمز",
+    "heroCta": "شروع خرید",
+    "heroSecondaryCta": "مطالعه بلاگ",
+    "shopByCategory": "خرید بر اساس دسته",
+    "shopByCategorySubtitle": "دسته‌بندی‌های محبوب را مرور کنید",
+    "bestSellers": "پرفروش‌ترین‌ها",
+    "bestSellersSubtitle": "محصولاتی که مشتریان بیشتر انتخاب می‌کنند",
+    "newArrivals": "جدیدترین‌ها",
+    "newArrivalsSubtitle": "تازه‌ترین اضافه‌شده‌ها به فروشگاه",
+    "fromTheBlog": "از بلاگ",
+    "fromTheBlogSubtitle": "راهنما، بررسی و اخبار فروشگاه"
   },
   "theme": {
     "light": "حالت روشن",
@@ -26,22 +40,63 @@
     "switch": "تغییر زبان"
   },
   "footer": {
-    "tagline": "ماکت فروشگاه آنلاین — نمونه کار فرانت‌اند",
+    "tagline": "ماکت فروشگاه آنلاین — نمونه کار فرانت‌اند با Next.js",
     "quickLinks": "دسترسی سریع",
+    "contactTitle": "تماس با ما",
+    "email": "devamir99@gmail.com",
+    "phone": "+98 912 000 0000",
+    "address": "تهران، ایران",
     "rights": "تمامی حقوق محفوظ است."
   },
   "shop": {
-    "subtitle": "مرور دسته‌بندی‌ها و محصولات mock — فاز ۱",
+    "subtitle": "مرور کامل دسته‌بندی‌ها و محصولات فروشگاه",
     "categoriesTitle": "دسته‌بندی محصولات",
     "productsTitle": "همه محصولات",
     "inStock": "موجود",
     "outOfStock": "ناموجود"
   },
   "blog": {
-    "subtitle": "مقالات mock دو زبانه — فاز ۱",
+    "subtitle": "مقالات راهنما، بررسی محصول و اخبار فروشگاه",
     "categoriesTitle": "دسته‌بندی بلاگ",
     "latestPosts": "آخرین مقالات",
     "minRead": "دقیقه مطالعه"
+  },
+  "about": {
+    "subtitle": "داستان و ارزش‌های پشت mockup فروشگاه نوا مارکت",
+    "storyTitle": "داستان ما",
+    "storyBody": "نوا مارکت یک mockup فروشگاه آنلاین است که برای نمایش معماری App Router، i18n دو زبانه و UI مدرن e-commerce ساخته شده. تمرکز ما روی تجربه خرید تمیز، سریع و قابل ارائه در portfolio است.",
+    "valuesTitle": "ارزش‌های ما",
+    "value1Title": "طراحی کاربرمحور",
+    "value1Body": "چیدمان واضح، مسیر خرید ساده و UI responsive در اولویت.",
+    "value2Title": "کیفیت کد",
+    "value2Body": "جداسازی data layer، component-based architecture و TypeScript strict.",
+    "value3Title": "دو زبانه واقعی",
+    "value3Body": "فارسی RTL و انگلیسی LTR با dictionary و mock content بومی.",
+    "statsProducts": "محصول",
+    "statsCategories": "دسته",
+    "statsPosts": "مقاله",
+    "statsReviews": "نظر"
+  },
+  "contact": {
+    "subtitle": "فرم mock — پیام شما ارسال نمی‌شود، فقط UI نمایشی است",
+    "formTitle": "ارسال پیام",
+    "nameLabel": "نام",
+    "namePlaceholder": "نام شما",
+    "emailLabel": "ایمیل",
+    "emailPlaceholder": "you@example.com",
+    "subjectLabel": "موضوع",
+    "subjectPlaceholder": "موضوع پیام",
+    "messageLabel": "پیام",
+    "messagePlaceholder": "متن پیام خود را بنویسید...",
+    "submit": "ارسال پیام",
+    "successTitle": "پیام ثبت شد!",
+    "successBody": "این یک mockup است — پیام واقعاً ارسال نشد.",
+    "infoTitle": "اطلاعات تماس",
+    "hoursTitle": "ساعات پاسخ‌گویی",
+    "hoursBody": "شنبه تا پنج‌شنبه، ۹ صبح تا ۶ عصر"
+  },
+  "cart": {
+    "subtitle": "سبد خرید mock — در فاز ۴ پیاده‌سازی می‌شود"
   },
   "common": {
     "products": "محصول",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nova Mart",
-    "description": "E-commerce frontend mockup — portfolio project"
+    "description": "E-commerce frontend mockup — modern shopping experience, bilingual UI"
   },
   "nav": {
     "home": "Home",
@@ -9,13 +9,27 @@
     "blog": "Blog",
     "about": "About",
     "contact": "Contact",
-    "cart": "Cart"
+    "cart": "Cart",
+    "menu": "Menu",
+    "closeMenu": "Close menu"
+  },
+  "promo": {
+    "message": "Free shipping on orders over $50 — Spring sale is live"
   },
   "home": {
-    "heroTitle": "Nova Mart Online Store",
-    "heroSubtitle": "Bilingual e-commerce mockup with a bold red theme — under construction",
-    "heroCta": "Browse Shop",
-    "comingSoon": "Coming soon..."
+    "heroBadge": "Spring Collection 2026",
+    "heroTitle": "Modern Living with Nova Mart",
+    "heroSubtitle": "Curated electronics, fashion, home, and beauty — a bilingual red-themed store mockup",
+    "heroCta": "Start Shopping",
+    "heroSecondaryCta": "Read the Blog",
+    "shopByCategory": "Shop by Category",
+    "shopByCategorySubtitle": "Browse our most popular departments",
+    "bestSellers": "Best Sellers",
+    "bestSellersSubtitle": "Top picks loved by our customers",
+    "newArrivals": "New Arrivals",
+    "newArrivalsSubtitle": "Fresh additions to the catalog",
+    "fromTheBlog": "From the Blog",
+    "fromTheBlogSubtitle": "Guides, reviews, and store news"
   },
   "theme": {
     "light": "Light mode",
@@ -26,22 +40,63 @@
     "switch": "Switch language"
   },
   "footer": {
-    "tagline": "E-commerce frontend mockup — portfolio project",
+    "tagline": "E-commerce frontend mockup — portfolio project built with Next.js",
     "quickLinks": "Quick Links",
+    "contactTitle": "Contact",
+    "email": "devamir99@gmail.com",
+    "phone": "+1 (555) 012-3456",
+    "address": "Tehran, Iran",
     "rights": "All rights reserved."
   },
   "shop": {
-    "subtitle": "Browse mock categories and products — Phase 1 data layer",
+    "subtitle": "Browse the full store catalog and categories",
     "categoriesTitle": "Product Categories",
     "productsTitle": "All Products",
     "inStock": "In stock",
     "outOfStock": "Out of stock"
   },
   "blog": {
-    "subtitle": "Bilingual mock articles — Phase 1 data layer",
+    "subtitle": "Guides, product reviews, and store updates",
     "categoriesTitle": "Blog Categories",
     "latestPosts": "Latest Posts",
     "minRead": "min read"
+  },
+  "about": {
+    "subtitle": "The story and values behind the Nova Mart store mockup",
+    "storyTitle": "Our Story",
+    "storyBody": "Nova Mart is an online store mockup built to showcase App Router architecture, bilingual i18n, and modern e-commerce UI. The focus is a clean, fast shopping experience that works as a portfolio piece.",
+    "valuesTitle": "Our Values",
+    "value1Title": "User-first Design",
+    "value1Body": "Clear layout, simple shopping paths, and responsive UI come first.",
+    "value2Title": "Code Quality",
+    "value2Body": "Separated data layer, component architecture, and strict TypeScript.",
+    "value3Title": "True Bilingual UX",
+    "value3Body": "Persian RTL and English LTR with native dictionaries and mock content.",
+    "statsProducts": "Products",
+    "statsCategories": "Categories",
+    "statsPosts": "Posts",
+    "statsReviews": "Reviews"
+  },
+  "contact": {
+    "subtitle": "Mock form — your message is not sent, UI demo only",
+    "formTitle": "Send a Message",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Message subject",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "submit": "Send Message",
+    "successTitle": "Message received!",
+    "successBody": "This is a mockup — no message was actually sent.",
+    "infoTitle": "Contact Info",
+    "hoursTitle": "Support Hours",
+    "hoursBody": "Saturday to Thursday, 9 AM – 6 PM"
+  },
+  "cart": {
+    "subtitle": "Mock cart — full checkout flow arrives in Phase 4"
   },
   "common": {
     "products": "products",
