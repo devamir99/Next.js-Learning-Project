@@ -19,7 +19,7 @@ export default async function CartPage({ params }: PlaceholderPageProps) {
     <Container className="py-12">
       <SectionHeader
         title={dictionary.nav.cart}
-        subtitle={dictionary.home.comingSoon}
+        subtitle={dictionary.cart.subtitle}
       />
     </Container>
   );

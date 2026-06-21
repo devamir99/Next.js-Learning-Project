@@ -1,8 +1,17 @@
 import Link from "next/link";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { CategoryCard } from "@/components/category/CategoryCard";
+import { HeroSection } from "@/components/home/HeroSection";
+import { HomeProductSection } from "@/components/home/HomeProductSection";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import {
+  getBestSellerProducts,
+  getBlogPosts,
+  getCategories,
+  getFeaturedBlogPosts,
+  getNewArrivalProducts,
+} from "@/lib/data";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { notFound } from "next/navigation";
@@ -20,50 +29,88 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const locale = localeParam as Locale;
   const dictionary = await getDictionary(locale);
-  const { home } = dictionary;
+  const { home, shop, blog, common } = dictionary;
+
+  const categories = getCategories(locale);
+  const bestSellers = getBestSellerProducts(locale);
+  const newArrivals = getNewArrivalProducts(locale);
+  const blogPosts = getFeaturedBlogPosts(locale).slice(0, 3);
+
+  const productLabels = {
+    inStock: shop.inStock,
+    outOfStock: shop.outOfStock,
+  };
 
   return (
     <>
-      <section className="border-b border-border bg-accent-soft/40">
-        <Container className="py-16 sm:py-24">
-          <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-            <Badge variant="secondary" className="mb-4">
-              {home.comingSoon}
-            </Badge>
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              {home.heroTitle}
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              {home.heroSubtitle}
-            </p>
-            <div className="mt-8">
-              <Link href={`/${locale}/shop`}>
-                <Button size="lg">{home.heroCta}</Button>
-              </Link>
-            </div>
+      <HeroSection locale={locale} home={home} />
+
+      <section className="py-14">
+        <Container>
+          <SectionHeader
+            title={home.shopByCategory}
+            subtitle={home.shopByCategorySubtitle}
+          />
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((category) => (
+              <CategoryCard
+                key={category.slug}
+                category={category}
+                locale={locale}
+                productsLabel={common.products}
+              />
+            ))}
           </div>
         </Container>
       </section>
 
-      <section className="py-16">
+      <HomeProductSection
+        locale={locale}
+        title={home.bestSellers}
+        subtitle={home.bestSellersSubtitle}
+        viewAllLabel={common.viewAll}
+        viewAllHref={`/${locale}/shop`}
+        products={bestSellers}
+        labels={productLabels}
+      />
+
+      <div className="bg-accent-soft/20">
+        <HomeProductSection
+          locale={locale}
+          title={home.newArrivals}
+          subtitle={home.newArrivalsSubtitle}
+          viewAllLabel={common.viewAll}
+          viewAllHref={`/${locale}/shop`}
+          products={newArrivals}
+          labels={productLabels}
+        />
+      </div>
+
+      <section className="py-14">
         <Container>
-          <SectionHeader
-            title={home.comingSoon}
-            subtitle={home.heroSubtitle}
-            align="center"
-            className="mx-auto"
-          />
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="rounded-xl border border-border bg-card p-6 shadow-sm"
-              >
-                <div className="mb-4 h-32 rounded-lg bg-accent-soft" />
-                <div className="h-4 w-2/3 rounded bg-border" />
-                <div className="mt-2 h-3 w-full rounded bg-border/70" />
-              </div>
-            ))}
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <SectionHeader
+              title={home.fromTheBlog}
+              subtitle={home.fromTheBlogSubtitle}
+            />
+            <Link
+              href={`/${locale}/blog`}
+              className="text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
+            >
+              {common.viewAll} →
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {(blogPosts.length > 0 ? blogPosts : getBlogPosts(locale).slice(0, 3)).map(
+              (post) => (
+                <BlogCard
+                  key={`${post.categorySlug}-${post.slug}`}
+                  post={post}
+                  locale={locale}
+                  minReadLabel={blog.minRead}
+                />
+              )
+            )}
           </div>
         </Container>
       </section>
