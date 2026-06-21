@@ -90,6 +90,46 @@ export function getFeaturedProducts(locale: Locale): LocalizedProduct[] {
   return getProducts(locale, { featured: true });
 }
 
+export function getBestSellerProducts(
+  locale: Locale,
+  limit = 4
+): LocalizedProduct[] {
+  const bestsellers = getProducts(locale, { badge: "bestseller" });
+
+  if (bestsellers.length >= limit) {
+    return bestsellers.slice(0, limit);
+  }
+
+  const featured = getFeaturedProducts(locale).filter(
+    (product) => !bestsellers.some((item) => item.id === product.id)
+  );
+
+  return [...bestsellers, ...featured].slice(0, limit);
+}
+
+export function getNewArrivalProducts(
+  locale: Locale,
+  limit = 4
+): LocalizedProduct[] {
+  const newProducts = getProducts(locale, { badge: "new" });
+
+  if (newProducts.length >= limit) {
+    return newProducts.slice(0, limit);
+  }
+
+  return getProducts(locale)
+    .filter((product) => product.inStock)
+    .slice(-limit)
+    .reverse();
+}
+
+export function getProductPath(
+  locale: Locale,
+  product: Pick<LocalizedProduct, "categorySlug" | "slug">
+): string {
+  return `/${locale}/shop/products/${product.categorySlug}/${product.slug}`;
+}
+
 export function getProductsByCategory(
   categorySlug: string,
   locale: Locale
