@@ -148,3 +148,42 @@ export type LocalizedHomeSlide = Omit<
 export type LocalizedQuickAccessItem = Omit<QuickAccessItem, "label"> & {
   label: string;
 };
+
+export type PromoBannerLayout = "grid-4" | "grid-2" | "wide";
+
+export type PromoBannerItem = {
+  id: string;
+  title: LocalizedString;
+  subtitle: LocalizedString;
+  href: string;
+  image: string;
+  accentColor: string;
+};
+
+export type PromoBannerSection = {
+  id: string;
+  layout: PromoBannerLayout;
+  items: PromoBannerItem[];
+};
+
+export type Brand = {
+  id: string;
+  name: LocalizedString;
+  slug: string;
+};
+
+export type LocalizedPromoBannerItem = Omit<
+  PromoBannerItem,
+  "title" | "subtitle"
+> & {
+  title: string;
+  subtitle: string;
+};
+
+export type LocalizedPromoBannerSection = Omit<PromoBannerSection, "items"> & {
+  items: LocalizedPromoBannerItem[];
+};
+
+export type LocalizedBrand = Omit<Brand, "name"> & {
+  name: string;
+};
