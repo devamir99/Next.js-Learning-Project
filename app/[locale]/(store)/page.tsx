@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { BlogCard } from "@/components/blog/BlogCard";
-import { CategoryCard } from "@/components/category/CategoryCard";
 import { AmazingDealsSection, getDealDeadline } from "@/components/home/AmazingDealsSection";
+import { BrandStrip } from "@/components/home/BrandStrip";
+import { CategoryIconGrid } from "@/components/home/CategoryIconGrid";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { HomeProductSection } from "@/components/home/HomeProductSection";
+import { PromoBannerSection } from "@/components/home/PromoBannerSection";
 import { QuickAccessGrid } from "@/components/home/QuickAccessGrid";
 import { StoryRail } from "@/components/home/StoryRail";
 import { PortfolioCta } from "@/components/portfolio/PortfolioCta";
@@ -12,9 +14,11 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   getBestSellerProducts,
   getBlogPosts,
+  getBrands,
   getCategories,
   getDealProducts,
   getFeaturedBlogPosts,
+  getHomeBannerSection,
   getHomeSlides,
   getHomeStories,
   getNewArrivalProducts,
@@ -44,6 +48,10 @@ export default async function HomePage({ params }: HomePageProps) {
   const slides = getHomeSlides(locale);
   const quickAccess = getQuickAccessItems(locale);
   const dealProducts = getDealProducts(locale);
+  const promoGrid4 = getHomeBannerSection(locale, "promo-grid-4");
+  const promoWide = getHomeBannerSection(locale, "promo-wide");
+  const promoGrid2 = getHomeBannerSection(locale, "promo-grid-2");
+  const brands = getBrands(locale);
   const bestSellers = getBestSellerProducts(locale);
   const newArrivals = getNewArrivalProducts(locale);
   const blogPosts = getFeaturedBlogPosts(locale).slice(0, 3);
@@ -84,24 +92,16 @@ export default async function HomePage({ params }: HomePageProps) {
         }}
       />
 
-      <section className="py-14">
-        <Container>
-          <SectionHeader
-            title={home.shopByCategory}
-            subtitle={home.shopByCategorySubtitle}
-          />
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category) => (
-              <CategoryCard
-                key={category.slug}
-                category={category}
-                locale={locale}
-                productsLabel={common.products}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
+      {promoGrid4 ? (
+        <PromoBannerSection layout={promoGrid4.layout} items={promoGrid4.items} />
+      ) : null}
+
+      <CategoryIconGrid
+        locale={locale}
+        categories={categories}
+        title={home.shopByCategory}
+        subtitle={home.shopByCategorySubtitle}
+      />
 
       <HomeProductSection
         locale={locale}
@@ -112,6 +112,10 @@ export default async function HomePage({ params }: HomePageProps) {
         products={bestSellers}
         labels={productLabels}
       />
+
+      {promoWide ? (
+        <PromoBannerSection layout={promoWide.layout} items={promoWide.items} />
+      ) : null}
 
       <div className="bg-accent-soft/20">
         <HomeProductSection
@@ -124,6 +128,17 @@ export default async function HomePage({ params }: HomePageProps) {
           labels={productLabels}
         />
       </div>
+
+      {promoGrid2 ? (
+        <PromoBannerSection layout={promoGrid2.layout} items={promoGrid2.items} />
+      ) : null}
+
+      <BrandStrip
+        locale={locale}
+        brands={brands}
+        title={home.brandsTitle}
+        subtitle={home.brandsSubtitle}
+      />
 
       <section className="py-14">
         <Container>

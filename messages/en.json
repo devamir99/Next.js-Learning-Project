@@ -44,7 +44,9 @@
     "productScrollNext": "Next products",
     "countdownHours": "Hours",
     "countdownMinutes": "Min",
-    "countdownSeconds": "Sec"
+    "countdownSeconds": "Sec",
+    "brandsTitle": "Popular brands",
+    "brandsSubtitle": "Shop trusted brand names"
   },
   "theme": {
     "light": "Light mode",

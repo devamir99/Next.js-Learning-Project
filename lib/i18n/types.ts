@@ -45,6 +45,8 @@ export type Dictionary = {
     countdownHours: string;
     countdownMinutes: string;
     countdownSeconds: string;
+    brandsTitle: string;
+    brandsSubtitle: string;
   };
   theme: {
     light: string;

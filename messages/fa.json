@@ -44,7 +44,9 @@
     "productScrollNext": "محصولات بعدی",
     "countdownHours": "ساعت",
     "countdownMinutes": "دقیقه",
-    "countdownSeconds": "ثانیه"
+    "countdownSeconds": "ثانیه",
+    "brandsTitle": "برندهای محبوب",
+    "brandsSubtitle": "خرید بر اساس برندهای معتبر"
   },
   "theme": {
     "light": "حالت روشن",
