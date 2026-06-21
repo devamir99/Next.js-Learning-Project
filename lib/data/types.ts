@@ -97,3 +97,54 @@ export type LocalizedReview = Omit<Review, "title" | "body"> & {
   title: string;
   body: string;
 };
+
+export type HomeStory = {
+  id: string;
+  label: LocalizedString;
+  href: string;
+  image: string;
+  ringColor: string;
+};
+
+export type HomeSlide = {
+  id: string;
+  title: LocalizedString;
+  subtitle: LocalizedString;
+  cta: LocalizedString;
+  href: string;
+  image: string;
+  badge?: LocalizedString;
+};
+
+export type QuickAccessIcon =
+  | "shop"
+  | "sale"
+  | "fashion"
+  | "mobile"
+  | "blog"
+  | "cart"
+  | "beauty"
+  | "sports";
+
+export type QuickAccessItem = {
+  id: string;
+  label: LocalizedString;
+  href: string;
+  icon: QuickAccessIcon;
+  bgColor: string;
+  iconColor: string;
+};
+
+export type LocalizedHomeStory = Omit<HomeStory, "label"> & { label: string };
+export type LocalizedHomeSlide = Omit<
+  HomeSlide,
+  "title" | "subtitle" | "cta" | "badge"
+> & {
+  title: string;
+  subtitle: string;
+  cta: string;
+  badge?: string;
+};
+export type LocalizedQuickAccessItem = Omit<QuickAccessItem, "label"> & {
+  label: string;
+};

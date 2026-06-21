@@ -10,6 +10,7 @@ export * from "./categories";
 export * from "./products";
 export * from "./blog";
 export * from "./reviews";
+export * from "./home";
 
 export function getCatalogStats() {
   return {
