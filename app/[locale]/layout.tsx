@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { getDirection, isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { author } from "@/lib/site/author";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -52,11 +53,19 @@ export async function generateMetadata({
       template: `%s | ${dictionary.meta.title}`,
     },
     description: dictionary.meta.description,
+    authors: [{ name: author.name, url: author.website }],
+    creator: author.name,
+    metadataBase: new URL(author.website),
+    icons: {
+      icon: "/favicon.svg",
+    },
     openGraph: {
       title: dictionary.meta.title,
       description: dictionary.meta.description,
       type: "website",
       locale: localeParam === "fa" ? "fa_IR" : "en_US",
+      url: author.website,
+      siteName: dictionary.meta.title,
     },
   };
 }
