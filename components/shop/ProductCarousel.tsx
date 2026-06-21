@@ -27,7 +27,11 @@ export function ProductCarousel({
   }, []);
 
   return (
-    <div className={`relative ${className}`}>
+    <div
+      role="region"
+      aria-roledescription="carousel"
+      className={`relative ${className}`}
+    >
       <button
         type="button"
         onClick={() => scroll(-1)}
@@ -49,7 +53,7 @@ export function ProductCarousel({
 
       <div
         ref={trackRef}
-        className="scrollbar-hide flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-1 py-1 sm:gap-4 sm:px-10"
+        className="scrollbar-hide flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-1 py-1 [-webkit-overflow-scrolling:touch] sm:gap-4 sm:px-10"
       >
         {children}
       </div>

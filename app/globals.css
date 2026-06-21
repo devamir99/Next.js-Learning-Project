@@ -71,6 +71,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-padding-top: 7.5rem;
+}
+
 .font-locale-fa body,
 html[lang="fa"] body {
   font-family: var(--font-fa), var(--font-sans), system-ui, sans-serif;
@@ -107,4 +111,9 @@ html[lang="fa"] body {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.snap-scroll-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }

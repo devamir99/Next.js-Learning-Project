@@ -22,6 +22,7 @@ const AUTOPLAY_MS = 5000;
 export function HeroCarousel({ slides, labels }: HeroCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [paused, setPaused] = useState(false);
 
   const goTo = useCallback(
     (index: number) => {
@@ -41,28 +42,41 @@ export function HeroCarousel({ slides, labels }: HeroCarouselProps) {
   }, []);
 
   useEffect(() => {
-    if (reducedMotion || slides.length <= 1) return;
+    if (reducedMotion || paused || slides.length <= 1) return;
 
     const timer = window.setInterval(() => {
       setActiveIndex((current) => (current + 1) % slides.length);
     }, AUTOPLAY_MS);
 
     return () => window.clearInterval(timer);
-  }, [reducedMotion, slides.length]);
+  }, [reducedMotion, paused, slides.length]);
 
   if (slides.length === 0) return null;
 
   const slide = slides[activeIndex];
+  const fadeClass = reducedMotion
+    ? ""
+    : "transition-opacity duration-500 motion-reduce:transition-none";
 
   return (
     <section className="border-b border-border bg-background py-4">
       <Container>
-        <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-          <div className="relative aspect-[21/8] min-h-[160px] w-full sm:min-h-[200px] md:min-h-[260px]">
+        <div
+          className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          onFocusCapture={() => setPaused(true)}
+          onBlurCapture={() => setPaused(false)}
+        >
+          <div
+            className="relative aspect-[21/8] min-h-[160px] w-full sm:min-h-[200px] md:min-h-[260px]"
+            aria-roledescription="carousel"
+            aria-label={slide.title}
+          >
             {slides.map((item, index) => (
               <div
                 key={item.id}
-                className={`absolute inset-0 transition-opacity duration-500 ${
+                className={`absolute inset-0 ${fadeClass} ${
                   index === activeIndex ? "opacity-100" : "pointer-events-none opacity-0"
                 }`}
                 aria-hidden={index !== activeIndex}
@@ -130,7 +144,9 @@ export function HeroCarousel({ slides, labels }: HeroCarouselProps) {
                     onClick={() => goTo(index)}
                     aria-label={`${labels.carouselSlide} ${index + 1}`}
                     aria-current={index === activeIndex ? "true" : undefined}
-                    className={`h-2 rounded-full transition-all ${
+                    className={`h-2 rounded-full motion-reduce:transition-none ${
+                      reducedMotion ? "" : "transition-all"
+                    } ${
                       index === activeIndex
                         ? "w-6 bg-primary"
                         : "w-2 bg-white/70 hover:bg-white"
