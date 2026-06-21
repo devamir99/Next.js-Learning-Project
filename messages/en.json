@@ -32,7 +32,10 @@
     "newArrivals": "New Arrivals",
     "newArrivalsSubtitle": "Fresh additions to the catalog",
     "fromTheBlog": "From the Blog",
-    "fromTheBlogSubtitle": "Guides, reviews, and store news"
+    "fromTheBlogSubtitle": "Guides, reviews, and store news",
+    "carouselPrev": "Previous slide",
+    "carouselNext": "Next slide",
+    "carouselSlide": "Slide"
   },
   "theme": {
     "light": "Light mode",

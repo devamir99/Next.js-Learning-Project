@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCard } from "@/components/category/CategoryCard";
-import { HeroSection } from "@/components/home/HeroSection";
+import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { HomeProductSection } from "@/components/home/HomeProductSection";
+import { QuickAccessGrid } from "@/components/home/QuickAccessGrid";
+import { StoryRail } from "@/components/home/StoryRail";
 import { PortfolioCta } from "@/components/portfolio/PortfolioCta";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -11,7 +13,10 @@ import {
   getBlogPosts,
   getCategories,
   getFeaturedBlogPosts,
+  getHomeSlides,
+  getHomeStories,
   getNewArrivalProducts,
+  getQuickAccessItems,
 } from "@/lib/data";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
@@ -33,6 +38,9 @@ export default async function HomePage({ params }: HomePageProps) {
   const { home, shop, blog, common, portfolio } = dictionary;
 
   const categories = getCategories(locale);
+  const stories = getHomeStories(locale);
+  const slides = getHomeSlides(locale);
+  const quickAccess = getQuickAccessItems(locale);
   const bestSellers = getBestSellerProducts(locale);
   const newArrivals = getNewArrivalProducts(locale);
   const blogPosts = getFeaturedBlogPosts(locale).slice(0, 3);
@@ -44,7 +52,16 @@ export default async function HomePage({ params }: HomePageProps) {
 
   return (
     <>
-      <HeroSection locale={locale} home={home} />
+      <StoryRail stories={stories} />
+      <HeroCarousel
+        slides={slides}
+        labels={{
+          carouselPrev: home.carouselPrev,
+          carouselNext: home.carouselNext,
+          carouselSlide: home.carouselSlide,
+        }}
+      />
+      <QuickAccessGrid items={quickAccess} />
 
       <section className="py-14">
         <Container>

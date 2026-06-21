@@ -32,7 +32,10 @@
     "newArrivals": "جدیدترین‌ها",
     "newArrivalsSubtitle": "تازه‌ترین اضافه‌شده‌ها به فروشگاه",
     "fromTheBlog": "از بلاگ",
-    "fromTheBlogSubtitle": "راهنما، بررسی و اخبار فروشگاه"
+    "fromTheBlogSubtitle": "راهنما، بررسی و اخبار فروشگاه",
+    "carouselPrev": "اسلاید قبلی",
+    "carouselNext": "اسلاید بعدی",
+    "carouselSlide": "اسلاید"
   },
   "theme": {
     "light": "حالت روشن",

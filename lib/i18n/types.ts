@@ -33,6 +33,9 @@ export type Dictionary = {
     newArrivalsSubtitle: string;
     fromTheBlog: string;
     fromTheBlogSubtitle: string;
+    carouselPrev: string;
+    carouselNext: string;
+    carouselSlide: string;
   };
   theme: {
     light: string;
