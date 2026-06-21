@@ -2,7 +2,7 @@ import { CartProvider } from "@/components/cart/CartProvider";
 import { SkipToContent } from "@/components/layout/SkipToContent";
 import { PromoBar } from "@/components/layout/PromoBar";
 import { StoreFooter } from "@/components/layout/StoreFooter";
-import { StoreNav } from "@/components/layout/StoreNav";
+import { StoreHeader } from "@/components/layout/StoreHeader";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { notFound } from "next/navigation";
@@ -30,7 +30,7 @@ export default async function StoreLayout({
       <div className="flex min-h-screen flex-col">
         <SkipToContent label={dictionary.common.skipToContent} />
         <PromoBar message={dictionary.promo.message} />
-        <StoreNav locale={locale} dictionary={dictionary} />
+        <StoreHeader locale={locale} dictionary={dictionary} />
         <main id="main-content" className="flex-1">
           {children}
         </main>

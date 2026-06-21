@@ -11,7 +11,10 @@
     "contact": "Contact",
     "cart": "Cart",
     "menu": "Menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "allCategories": "All categories",
+    "specialOffers": "Special offers",
+    "login": "Sign in"
   },
   "promo": {
     "message": "Free shipping on orders over $50 — Spring sale is live"

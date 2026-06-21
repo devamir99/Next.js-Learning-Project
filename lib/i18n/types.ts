@@ -12,6 +12,9 @@ export type Dictionary = {
     cart: string;
     menu: string;
     closeMenu: string;
+    allCategories: string;
+    specialOffers: string;
+    login: string;
   };
   promo: {
     message: string;
