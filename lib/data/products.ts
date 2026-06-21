@@ -125,8 +125,12 @@ export function getNewArrivalProducts(
 
 export function getProductPath(
   locale: Locale,
-  product: Pick<LocalizedProduct, "categorySlug" | "slug">
+  product: Pick<LocalizedProduct, "categorySlug" | "subcategorySlug" | "slug">
 ): string {
+  if (product.subcategorySlug) {
+    return `/${locale}/shop/products/${product.categorySlug}/${product.subcategorySlug}/${product.slug}`;
+  }
+
   return `/${locale}/shop/products/${product.categorySlug}/${product.slug}`;
 }
 
