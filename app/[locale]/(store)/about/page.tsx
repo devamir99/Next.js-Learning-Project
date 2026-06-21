@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PortfolioCta } from "@/components/portfolio/PortfolioCta";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { getCatalogStats } from "@/lib/data";
@@ -29,7 +30,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
   const locale = localeParam as Locale;
   const dictionary = await getDictionary(locale);
-  const { about } = dictionary;
+  const { about, portfolio } = dictionary;
   const stats = getCatalogStats();
 
   const values = [
@@ -46,6 +47,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
   ];
 
   return (
+    <>
     <Container className="py-12">
       <SectionHeader title={dictionary.nav.about} subtitle={about.subtitle} />
 
@@ -84,5 +86,10 @@ export default async function AboutPage({ params }: AboutPageProps) {
         </div>
       </section>
     </Container>
+    <PortfolioCta
+      labels={portfolio}
+      contactHref={`/${locale}/contact`}
+    />
+    </>
   );
 }

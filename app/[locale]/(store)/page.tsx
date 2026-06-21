@@ -3,6 +3,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCard } from "@/components/category/CategoryCard";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HomeProductSection } from "@/components/home/HomeProductSection";
+import { PortfolioCta } from "@/components/portfolio/PortfolioCta";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
@@ -29,7 +30,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const locale = localeParam as Locale;
   const dictionary = await getDictionary(locale);
-  const { home, shop, blog, common } = dictionary;
+  const { home, shop, blog, common, portfolio } = dictionary;
 
   const categories = getCategories(locale);
   const bestSellers = getBestSellerProducts(locale);
@@ -114,6 +115,11 @@ export default async function HomePage({ params }: HomePageProps) {
           </div>
         </Container>
       </section>
+
+      <PortfolioCta
+        labels={portfolio}
+        contactHref={`/${locale}/contact`}
+      />
     </>
   );
 }
