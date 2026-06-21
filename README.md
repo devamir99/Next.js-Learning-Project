@@ -8,6 +8,40 @@ A bilingual (Persian / English) e-commerce storefront mockup built with **Next.j
 
 ---
 
+## Screenshots
+
+### Home — full page (Persian / RTL, light)
+
+Story rail, hero carousel, special offers, promo banners, category grids, product sections, brands, and blog row.
+
+<img src="docs/screenshots/home-fa-full.png" alt="Nova Mart home page — Persian full layout" width="900" />
+
+### Home — full page (English / LTR, dark)
+
+Same retail layout in English with dark theme — header, deals strip, product grids, and portfolio CTA.
+
+<img src="docs/screenshots/home-en-full-dark.png" alt="Nova Mart home page — English dark mode full layout" width="900" />
+
+### Home — hero & header (English, light)
+
+Two-row header, search bar (Ctrl+K), category sub-nav, story rail, and hero slider.
+
+![Home page — English hero section](docs/screenshots/home-en-hero.png)
+
+### Home — deals & banners (Persian, light)
+
+Special offers carousel with countdown, promo tile grid, and category quick links.
+
+![Home page — Persian deals and banners](docs/screenshots/home-fa-sections.png)
+
+### Blog (Persian, dark mode)
+
+Blog landing with category cards and latest articles.
+
+![Blog page — Persian dark mode](docs/screenshots/blog-fa-dark.png)
+
+---
+
 ## Highlights
 
 - **Digikala-inspired home** — story rail, hero carousel, amazing deals strip, promo banners, dense product grids
@@ -35,6 +69,7 @@ A bilingual (Persian / English) e-commerce storefront mockup built with **Next.j
 ```
 app/[locale]/(store)/     Store pages (home, shop, blog, cart, checkout…)
 components/               UI, layout, cart, shop, search, portfolio
+docs/screenshots/         README preview images
 lib/data/                 Types, getters, localization helpers
 lib/i18n/                 Locale config + dictionaries
 lib/cart/                 Cart state (localStorage)
