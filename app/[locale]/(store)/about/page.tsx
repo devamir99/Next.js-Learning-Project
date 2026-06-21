@@ -86,10 +86,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
         </div>
       </section>
     </Container>
-    <PortfolioCta
-      labels={portfolio}
-      contactHref={`/${locale}/contact`}
-    />
+    <PortfolioCta labels={portfolio} />
     </>
   );
 }

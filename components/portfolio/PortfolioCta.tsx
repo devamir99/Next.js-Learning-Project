@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { author } from "@/lib/site/author";
 import { AuthorLinks } from "./AuthorLinks";
@@ -17,10 +16,9 @@ type PortfolioCtaProps = {
     telegram: string;
     phone: string;
   };
-  contactHref: string;
 };
 
-export function PortfolioCta({ labels, contactHref }: PortfolioCtaProps) {
+export function PortfolioCta({ labels }: PortfolioCtaProps) {
   return (
     <section className="border-t border-border bg-gradient-to-br from-primary/10 via-background to-accent-soft/30 py-16">
       <Container>
@@ -43,12 +41,12 @@ export function PortfolioCta({ labels, contactHref }: PortfolioCtaProps) {
             >
               {labels.visitPortfolio}
             </a>
-            <Link
-              href={contactHref}
+            <a
+              href={`tel:${author.phoneTel}`}
               className="inline-flex min-w-[200px] items-center justify-center rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
               {labels.contactMe}
-            </Link>
+            </a>
           </div>
           <AuthorLinks
             labels={labels}

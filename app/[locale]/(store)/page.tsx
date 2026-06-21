@@ -116,10 +116,7 @@ export default async function HomePage({ params }: HomePageProps) {
         </Container>
       </section>
 
-      <PortfolioCta
-        labels={portfolio}
-        contactHref={`/${locale}/contact`}
-      />
+      <PortfolioCta labels={portfolio} />
     </>
   );
 }
