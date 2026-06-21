@@ -29,5 +29,22 @@
     "tagline": "E-commerce frontend mockup — portfolio project",
     "quickLinks": "Quick Links",
     "rights": "All rights reserved."
+  },
+  "shop": {
+    "subtitle": "Browse mock categories and products — Phase 1 data layer",
+    "categoriesTitle": "Product Categories",
+    "productsTitle": "All Products",
+    "inStock": "In stock",
+    "outOfStock": "Out of stock"
+  },
+  "blog": {
+    "subtitle": "Bilingual mock articles — Phase 1 data layer",
+    "categoriesTitle": "Blog Categories",
+    "latestPosts": "Latest Posts",
+    "minRead": "min read"
+  },
+  "common": {
+    "products": "products",
+    "viewAll": "View all"
   }
 }

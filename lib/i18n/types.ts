@@ -30,4 +30,21 @@ export type Dictionary = {
     quickLinks: string;
     rights: string;
   };
+  shop: {
+    subtitle: string;
+    categoriesTitle: string;
+    productsTitle: string;
+    inStock: string;
+    outOfStock: string;
+  };
+  blog: {
+    subtitle: string;
+    categoriesTitle: string;
+    latestPosts: string;
+    minRead: string;
+  };
+  common: {
+    products: string;
+    viewAll: string;
+  };
 };

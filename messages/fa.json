@@ -29,5 +29,22 @@
     "tagline": "ماکت فروشگاه آنلاین — نمونه کار فرانت‌اند",
     "quickLinks": "دسترسی سریع",
     "rights": "تمامی حقوق محفوظ است."
+  },
+  "shop": {
+    "subtitle": "مرور دسته‌بندی‌ها و محصولات mock — فاز ۱",
+    "categoriesTitle": "دسته‌بندی محصولات",
+    "productsTitle": "همه محصولات",
+    "inStock": "موجود",
+    "outOfStock": "ناموجود"
+  },
+  "blog": {
+    "subtitle": "مقالات mock دو زبانه — فاز ۱",
+    "categoriesTitle": "دسته‌بندی بلاگ",
+    "latestPosts": "آخرین مقالات",
+    "minRead": "دقیقه مطالعه"
+  },
+  "common": {
+    "products": "محصول",
+    "viewAll": "مشاهده همه"
   }
 }
