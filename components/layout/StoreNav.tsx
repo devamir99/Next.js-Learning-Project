@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CartIconLink } from "@/components/cart/CartIconLink";
+import { SearchDialog } from "@/components/search/SearchDialog";
 import { Container } from "@/components/ui/Container";
 import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher";
 import { MobileMenu } from "@/components/layout/MobileMenu";
@@ -59,6 +60,7 @@ export function StoreNav({ locale, dictionary }: StoreNavProps) {
           </nav>
 
           <div className="flex items-center gap-2">
+            <SearchDialog locale={locale} labels={dictionary.common} />
             <CartIconLink locale={locale} label={nav.cart} />
             <div className="hidden items-center gap-2 md:flex">
               <LocaleSwitcher locale={locale} label={localeLabels.switch} />
