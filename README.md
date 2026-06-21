@@ -10,6 +10,7 @@ A bilingual (Persian / English) e-commerce storefront mockup built with **Next.j
 
 ## Highlights
 
+- **Digikala-inspired home** — story rail, hero carousel, amazing deals strip, promo banners, dense product grids
 - **Bilingual UI** — `/fa` (RTL) and `/en` (LTR) with dictionary-based i18n
 - **Full store flow** — home, shop (PLP/PDP), blog, cart, mock checkout
 - **24 mock products**, categories, blog posts, and reviews (JSON data layer)
@@ -83,6 +84,15 @@ npm run lint     # ESLint
 - Locale in URL: `/fa/...`, `/en/...`
 - `dir="rtl"` / `dir="ltr"` on `<html>`
 - All UI strings from `messages/*.json`
+
+### Home (retail layout)
+- Two-row header with search bar and category sub-nav
+- Story rail, hero slider, quick-access icons
+- Special offers carousel with countdown timer
+- Promo banner grids (4-col, wide, 2-col)
+- Circular category icons, brand strip
+- Dense 6-column product grids + horizontal carousels
+- Horizontal blog row, compact portfolio CTA
 
 ## Author & Contact
 
