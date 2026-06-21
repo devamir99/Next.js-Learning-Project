@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { RatingStars } from "@/components/ui/RatingStars";
-import { formatPrice } from "@/lib/data/products";
+import { formatPrice, getProductPath } from "@/lib/data/products";
 import type { LocalizedProduct } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -22,24 +23,29 @@ const badgeLabels: Record<NonNullable<LocalizedProduct["badge"]>, { fa: string; 
 
 export function ProductCard({ product, locale, labels }: ProductCardProps) {
   const badgeLabel = product.badge ? badgeLabels[product.badge][locale] : null;
+  const href = getProductPath(locale, product);
 
   return (
     <article className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
-      <div className="relative aspect-square overflow-hidden bg-accent-soft/40">
-        <Image
-          src={product.images[0]}
-          alt={product.name}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-        {badgeLabel ? (
-          <Badge className="absolute start-3 top-3">{badgeLabel}</Badge>
-        ) : null}
-      </div>
+      <Link href={href} className="block">
+        <div className="relative aspect-square overflow-hidden bg-accent-soft/40">
+          <Image
+            src={product.images[0]}
+            alt={product.name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          {badgeLabel ? (
+            <Badge className="absolute start-3 top-3">{badgeLabel}</Badge>
+          ) : null}
+        </div>
+      </Link>
       <div className="space-y-2 p-4">
         <h3 className="line-clamp-2 text-base font-semibold text-foreground">
-          {product.name}
+          <Link href={href} className="transition-colors hover:text-primary">
+            {product.name}
+          </Link>
         </h3>
         <p className="line-clamp-2 text-sm text-muted-foreground">
           {product.shortDescription}

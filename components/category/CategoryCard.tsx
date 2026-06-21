@@ -16,7 +16,7 @@ export function CategoryCard({
 }: CategoryCardProps) {
   return (
     <Link
-      href={`/${locale}/shop`}
+      href={`/${locale}/shop/products/${category.slug}`}
       className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-accent-soft/40">
