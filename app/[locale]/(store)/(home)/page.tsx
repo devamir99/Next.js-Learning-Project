@@ -173,7 +173,7 @@ export default async function HomePage({ params }: HomePageProps) {
         }}
       />
 
-      <PortfolioCta labels={portfolio} />
+      <PortfolioCta labels={portfolio} variant="compact" />
     </>
   );
 }
