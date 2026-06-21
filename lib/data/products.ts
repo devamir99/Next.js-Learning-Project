@@ -123,6 +123,36 @@ export function getNewArrivalProducts(
     .reverse();
 }
 
+export function getDiscountPercent(
+  product: Pick<Product, "price" | "compareAtPrice">
+): number | null {
+  if (!product.compareAtPrice || product.compareAtPrice <= product.price) {
+    return null;
+  }
+
+  return Math.round((1 - product.price / product.compareAtPrice) * 100);
+}
+
+export function getDealProducts(
+  locale: Locale,
+  limit = 12
+): LocalizedProduct[] {
+  const saleProducts = getProducts(locale, { badge: "sale" });
+
+  if (saleProducts.length >= limit) {
+    return saleProducts.slice(0, limit);
+  }
+
+  const withDiscount = getProducts(locale).filter(
+    (product) =>
+      product.compareAtPrice !== undefined &&
+      product.compareAtPrice > product.price &&
+      !saleProducts.some((item) => item.id === product.id)
+  );
+
+  return [...saleProducts, ...withDiscount].slice(0, limit);
+}
+
 export function getProductPath(
   locale: Locale,
   product: Pick<LocalizedProduct, "categorySlug" | "subcategorySlug" | "slug">
